@@ -1,0 +1,2591 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#103d49"><meta name="description" content="Lộ trình tự học quản lý vận hành nhà chung cư, câu hỏi và tình huống trên điện thoại."><title>Building Operations Learning Hub</title><style>
+:root{color-scheme:light;--ink:#18323f;--sub:#64747e;--teal:#0b7777;--teal-d:#07585c;--mint:#e6f4f0;--cream:#f6f8f7;--white:#fff;--border:#dfe8e7;--gold:#c47e31;--softgold:#fff3e3;--red:#ad4b46;--pink:#fff0ec;--radius:18px;--shadow:0 9px 32px rgba(22,54,56,.05);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html{font-size:16px;scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);line-height:1.58}button,input,select{font:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}a{color:var(--teal)}.sr-only{position:absolute!important;clip:rect(0,0,0,0)!important;white-space:nowrap;width:1px;height:1px;overflow:hidden}.icon{display:inline-block;vertical-align:middle;width:20px;height:20px;flex-shrink:0;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}.app-shell{min-height:100vh}.desktop-sidebar{display:none}.main-area{max-width:1150px;margin:0 auto;min-height:100vh}.topbar{display:flex;align-items:center;justify-content:space-between;padding:16px 18px 10px;gap:10px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:inherit;font-size:14px;line-height:1.2;font-weight:800;letter-spacing:-.2px}.brand-mark{width:38px;height:38px;background:#103c48;color:#b5e1d7;border-radius:13px;display:grid;place-items:center}.brand-mark .icon{width:22px;height:22px}.brand-small{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--teal);font-weight:800}.mobile-top-actions{display:flex;gap:8px}.round-button{width:39px;height:39px;border:1px solid var(--border);background:white;color:var(--ink);border-radius:12px;display:grid;place-items:center}.page{padding:7px 16px 108px;max-width:1100px;margin:0 auto}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--teal);font-weight:850;margin:0 0 10px}.page-title{font-size:clamp(28px,6vw,43px);letter-spacing:-1.3px;line-height:1.16;margin:0 0 9px;font-weight:830}.lede{color:var(--sub);font-size:15.5px;max-width:710px;margin:0}.section-title{font-size:20px;line-height:1.3;letter-spacing:-.45px;margin:0;font-weight:800}.section-sub{color:var(--sub);font-size:13px;margin:5px 0 0}.section-heading{display:flex;align-items:end;justify-content:space-between;margin:27px 0 14px;gap:12px}.text-link{font-size:13px;font-weight:750;text-decoration:none;color:var(--teal)}.text-link:hover{text-decoration:underline}.panel{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}.hero{border-radius:24px;background:linear-gradient(145deg,#103d49 0%,#0d6664 100%);color:white;min-height:294px;padding:25px 21px;overflow:hidden;position:relative;margin-top:8px;isolation:isolate}.hero>*{position:relative;z-index:1}.hero:after{content:"";position:absolute;width:330px;height:330px;border:1px solid rgba(255,255,255,.13);border-radius:50%;top:-115px;right:-148px;box-shadow:0 0 0 50px rgba(255,255,255,.035),0 0 0 100px rgba(255,255,255,.02)}.hero .eyebrow{color:#b2e3da}.hero-title{font-size:clamp(29px,6.2vw,48px);line-height:1.11;letter-spacing:-1.1px;margin:0 0 12px;max-width:480px}.hero p{font-size:14px;color:#d4ebe8;max-width:500px;margin:0 0 22px}.hero-icon{position:absolute;right:-4px;bottom:-12px;opacity:.3;z-index:0;width:150px;height:164px}.button{border:0;background:var(--teal);color:white;display:inline-flex;gap:8px;align-items:center;justify-content:center;font-weight:750;padding:12px 16px;border-radius:12px;min-height:44px;text-decoration:none;font-size:14px;transition:transform .12s,background .12s}.button:hover{background:var(--teal-d)}.button:active{transform:scale(.98)}.button.light{background:white;color:#134d52}.button.light:hover{background:#eaf5f2}.button.outline{background:white;color:var(--ink);border:1px solid #cbdad9}.button.outline:hover{background:#f7fbfa}.button.ghost{background:transparent;color:var(--teal);border:1px solid var(--border)}.button.gold{background:#f5c989;color:#203c47}.button.small{padding:8px 11px;min-height:38px;font-size:12.5px}.button.full{width:100%}.button.icon-only{width:44px;padding:0}.button:focus-visible,.round-button:focus-visible,a:focus-visible,.nav-link:focus-visible,.choice:focus-visible,.tab:focus-visible,input:focus-visible{outline:3px solid #f1a64d;outline-offset:3px}.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:16px 0 0}.stat{padding:14px 12px;text-align:left}.stat .num{font-size:24px;line-height:1.2;font-weight:850;letter-spacing:-.7px}.stat .muted{font-size:11.5px;color:var(--sub);margin-top:3px}.grid-module{display:grid;grid-template-columns:1fr;gap:12px}.module-card{padding:17px;position:relative;display:block;color:inherit;text-decoration:none;transition:border-color .15s,transform .15s}.module-card:hover{border-color:#9bc9c5;transform:translateY(-2px)}.module-card-top{display:flex;gap:13px;align-items:start}.square-icon{border-radius:12px;background:#e9f4f1;color:var(--teal);height:43px;width:43px;flex-shrink:0;display:grid;place-items:center}.square-icon.warm{background:#fff2e4;color:#af732e}.module-card h3{font-size:16px;letter-spacing:-.35px;line-height:1.35;margin:0 0 4px;font-weight:800}.module-card p{color:var(--sub);font-size:13px;margin:0}.module-meta{display:flex;gap:8px;flex-wrap:wrap;font-size:11.5px;color:var(--sub);margin:14px 0 12px}.pill{font-size:11px;border-radius:50px;padding:3px 8px;background:#eff5f3;color:#38756f;font-weight:700}.pill.solid{background:var(--mint);color:#0a6d64}.pill.warn{background:#fff0dc;color:#985f1d}.progress-track{height:7px;background:#e6edeb;border-radius:99px;overflow:hidden}.progress-fill{height:100%;width:var(--progress,0%);background:#1d9690;border-radius:99px;transition:width .3s}.progress-label{display:flex;justify-content:space-between;font-size:11px;color:var(--sub);margin-top:6px}.banner{display:flex;gap:11px;align-items:start;border-radius:15px;padding:14px 15px;background:#fff6e8;border:1px solid #f2dec1;font-size:12.5px;color:#70552d}.banner .icon{color:#a26929}.banner strong{color:#654922}.learning-tip{display:flex;align-items:center;gap:13px;padding:16px;margin:15px 0;background:white;border:1px solid var(--border);border-radius:17px}.learning-tip p{margin:0;color:var(--sub);font-size:13px}.learning-tip strong{display:block;font-size:14px}.lesson-list{display:flex;flex-direction:column;gap:9px}.lesson-row{display:flex;align-items:center;gap:13px;padding:14px 15px;border:1px solid var(--border);border-radius:14px;background:white;color:inherit;text-decoration:none}.lesson-row:hover{border-color:#8cc8c1}.lesson-number{display:grid;place-items:center;border-radius:50%;width:34px;height:34px;flex-shrink:0;background:#eef4f2;color:#52766f;font-weight:800;font-size:12px}.lesson-number.is-done{background:#daf1e9;color:#007d67}.lesson-row .body{flex:1;min-width:0}.lesson-row strong{font-size:14px;display:block;line-height:1.3}.lesson-row small{font-size:11px;color:var(--sub);display:block;margin-top:3px}.lesson-row>.icon{color:#889a9a}.pagehead{padding:22px 0 16px}.breadcrumbs{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--sub);margin-bottom:14px;flex-wrap:wrap}.breadcrumbs a{color:var(--sub);text-decoration:none}.breadcrumbs a:hover{text-decoration:underline}.module-hero{display:flex;align-items:start;gap:15px;padding:21px;margin:8px 0 15px}.module-hero h1{font-size:clamp(24px,5.5vw,34px);line-height:1.19;margin:3px 0 8px;letter-spacing:-.8px}.module-hero p{color:var(--sub);font-size:14px;margin:0 0 12px}.module-achievements{display:flex;gap:10px;flex-wrap:wrap}.mini-stat{font-size:12px;color:var(--sub);display:inline-flex;align-items:center;gap:5px}.content-grid{display:grid;grid-template-columns:1fr;gap:18px}.reading-col{min-width:0}.reader-head h1{font-size:clamp(28px,6vw,41px);line-height:1.16;letter-spacing:-1px;margin:5px 0 11px}.lesson-counter{font-size:12px;font-weight:800;letter-spacing:.5px;color:var(--teal)}.reader-lede{font-size:17px;line-height:1.64;color:#465d64;margin:0 0 18px}.reader-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:18px}.reader-article{padding:0;background:transparent}.reading-section{background:white;border:1px solid var(--border);border-radius:17px;padding:20px 17px;margin:0 0 13px}.reading-section h2{font-size:18px;margin:0 0 12px;letter-spacing:-.3px}.reading-section h3{font-size:15px;margin:0 0 6px}.reading-section p{font-size:15.5px;line-height:1.75;color:#405761;margin:0 0 10px}.reading-section p:last-child{margin-bottom:0}.concepts{display:grid;gap:12px}.concept{border-left:3px solid #82bbb1;padding:1px 0 1px 12px}.concept strong{font-size:14px;display:block;margin-bottom:3px}.concept p{font-size:14.5px;line-height:1.65;color:#455d65;margin:0}.section-tag{display:inline-flex;align-items:center;gap:6px;color:var(--teal);font-size:11px;font-weight:850;text-transform:uppercase;letter-spacing:1.15px;margin:0 0 8px}.section-tag.gold-text{color:#a56b27}.example-box{background:#edf7f4;border:1px solid #cfe9df;border-radius:14px;padding:15px;margin:12px 0}.example-box p{font-size:14px;color:#234d4d}.practice-box{background:#fff5e9;border:1px solid #f0dfc8;border-radius:14px;padding:16px}.practice-box p{font-size:14px;color:#655338}.notice{font-size:12px;color:var(--sub);display:flex;gap:7px;align-items:start}.source-link{display:inline-block;font-size:12px;border:1px solid var(--border);border-radius:9px;padding:5px 9px;color:#4a6e73;background:white;margin:4px 4px 4px 0}.reading-section details{border:1px solid var(--border);border-radius:12px;padding:12px;background:#fbfdfc}.reading-section details summary{font-size:14px;font-weight:800;cursor:pointer}.reading-section details p{font-size:13px;margin:9px 0 0}.mini-quiz{background:#f3f8f6;border:1px solid #cae4dc;border-radius:16px;padding:17px;margin-top:12px}.question-heading{font-size:15px;line-height:1.45;font-weight:800;margin:0 0 12px}.choice-list{display:grid;gap:8px}.choice{width:100%;display:flex;align-items:center;gap:10px;text-align:left;min-height:46px;background:white;color:var(--ink);border:1.5px solid #d9e6e3;border-radius:11px;padding:11px 12px;font-size:13.5px;line-height:1.5}.choice:hover{border-color:#76b8b1}.choice.selected{background:#e8f4f1;border-color:var(--teal)}.choice.correct{background:#e3f4e7;border-color:#3b9a79}.choice.wrong{background:#fff0ed;border-color:#c66a62}.choice-dot{width:21px;height:21px;border-radius:50%;border:2px solid #a5b8b5;display:grid;place-items:center;flex-shrink:0;font-size:11px}.choice.selected .choice-dot{border-color:var(--teal);background:var(--teal);color:#fff}.feedback{border-radius:12px;padding:12px 13px;font-size:13px;margin:12px 0;line-height:1.6}.feedback.good{background:#ddf2e7;color:#225c48}.feedback.bad{background:#fff0eb;color:#8c4942}.feedback strong{display:block;margin-bottom:3px}.quiz-actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}.reader-bottom{display:flex;justify-content:space-between;gap:9px;margin:20px 0}.reader-bottom>*{flex:1}.right-rail{display:none}.right-rail .panel{padding:18px;position:sticky;top:20px}.rail-list{display:grid;gap:9px;margin-top:14px}.rail-list a{text-decoration:none;color:var(--sub);font-size:12.5px}.rail-list a:hover{color:var(--teal)}.rail-list a.active{font-weight:800;color:var(--teal)}.question-count{font-size:13px;color:var(--sub);font-weight:700}.quiz-wrap{max-width:760px;margin:20px auto}.quiz-card{padding:19px}.quiz-card h2{font-size:22px;line-height:1.35;margin:0 0 19px}.quiz-card .choice{font-size:14.5px}.quiz-progress{display:flex;gap:4px;margin:18px 0}.quiz-progress i{height:6px;flex:1;border-radius:10px;background:#e3ebea}.quiz-progress i.done{background:var(--teal)}.quiz-result{text-align:center;padding:28px 18px}.result-figure{font-size:58px;line-height:1;font-weight:850;letter-spacing:-1.8px;margin:14px}.result-good{color:#0b8072}.result-bad{color:#bf742e}.results-note{max-width:480px;margin:0 auto 20px;color:var(--sub);font-size:14px}.tabs{display:flex;gap:7px;overflow-x:auto;padding-bottom:3px;margin:18px 0 12px}.tab{border:1px solid var(--border);border-radius:99px;background:white;padding:9px 13px;white-space:nowrap;color:var(--sub);font-size:12.5px;font-weight:750;min-height:40px}.tab.active{background:var(--teal);color:white;border-color:var(--teal)}.scenario-card{padding:20px 16px;margin:12px 0}.scenario-card h3{margin:0 0 8px;font-size:17px}.scenario-card p{color:var(--sub);font-size:14px;margin:0 0 14px}.scenario-card .choice{font-size:13px}.flashcard-grid{display:grid;grid-template-columns:1fr;gap:10px}.flash-card{padding:19px;min-height:164px;display:flex;flex-direction:column;justify-content:space-between}.flash-card .term{font-size:18px;font-weight:800;line-height:1.3}.flash-card .meaning{font-size:14px;color:#49616b;line-height:1.7}.flash-card small{color:var(--sub);font-size:11px}.flash-actions{display:flex;gap:7px;margin-top:16px}.searchbox{position:relative;margin:15px 0}.searchbox>.icon{position:absolute;top:13px;left:14px;color:#728883}.searchbox input{height:48px;width:100%;padding:10px 13px 10px 44px;border-radius:13px;border:1px solid #cdddda;background:white;color:var(--ink);outline:0}.searchbox input:focus{border-color:var(--teal);box-shadow:0 0 0 3px rgba(11,119,119,.1)}.glossary-list{display:grid;gap:9px}.glossary-card{padding:14px 16px}.glossary-card strong{display:block;font-size:14.5px}.glossary-card p{color:#526770;margin:4px 0;font-size:13.5px;line-height:1.6}.glossary-card small{font-size:11px;color:var(--sub)}.progress-summary{padding:18px;margin:16px 0}.progress-ring{height:120px;width:120px;border-radius:50%;margin:auto;display:grid;place-items:center;background:conic-gradient(var(--teal) var(--deg),#eaf1ef 0)}.progress-ring>div{height:94px;width:94px;background:white;border-radius:50%;display:grid;place-items:center;font-weight:850;font-size:25px}.progress-layout{display:grid;gap:15px}.progress-stat{padding:16px}.progress-stat strong{font-size:23px;display:block}.progress-stat span{font-size:12px;color:var(--sub)}.form-panel{padding:18px}.form-panel p{color:var(--sub);font-size:13px}.footer{color:#869794;text-align:center;font-size:11px;padding:28px 12px 100px}.mobile-nav{position:fixed;z-index:20;left:0;right:0;bottom:0;background:rgba(255,255,255,.97);border-top:1px solid #d9e5e3;box-shadow:0 -9px 30px rgba(18,56,54,.04);display:grid;grid-template-columns:repeat(5,1fr);padding:8px 5px max(9px,env(safe-area-inset-bottom))}.nav-link{display:flex;flex-direction:column;gap:3px;justify-content:center;align-items:center;min-height:47px;color:#6b8180;text-decoration:none;font-size:10px;font-weight:680;border-radius:10px;line-height:1.2}.nav-link .icon{width:21px;height:21px}.nav-link.active{color:var(--teal);background:#edf7f4}.muted{color:var(--sub)}.empty{padding:34px 20px;text-align:center;color:var(--sub);border:1px dashed #bfd0cc;border-radius:16px;background:white}.empty h3{color:var(--ink);margin:8px 0}.empty .icon{width:32px;height:32px}.smallprint{font-size:11px;color:#778a90}.divider{border:0;border-top:1px solid var(--border);margin:16px 0}.checklist{display:grid;gap:10px}.check-item{border:1px solid #d5e4df;border-radius:11px;padding:12px;background:white;display:flex;align-items:start;gap:10px;font-size:13px}.check-item input{width:20px;height:20px;accent-color:var(--teal);margin:0;flex-shrink:0}.line-graphic{display:flex;gap:3px;margin:13px 0;align-items:stretch}.line-graphic .step{flex:1;border-radius:10px;background:#eaf5f1;padding:12px 8px;text-align:center;color:#326d68;font-weight:700;font-size:11px}.line-graphic .arrow{color:var(--teal);align-self:center;font-weight:800}.info-chips{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.info-chip{font-size:11px;color:#45736d;background:#eaf5f1;border-radius:20px;padding:5px 9px}.inline-legal{font-size:12px;color:#8b622e;background:#fff5e7;padding:9px 12px;border-radius:10px;margin-top:10px}.toast{position:fixed;bottom:93px;left:50%;transform:translateX(-50%);background:#143e48;color:white;z-index:99;border-radius:12px;padding:10px 14px;font-size:13px;box-shadow:0 10px 35px #132f2d30;max-width:min(90vw,500px);text-align:center;opacity:0;pointer-events:none;transition:opacity .2s}.toast.show{opacity:1}.visually-hidden{position:absolute;left:-10000px}.source-ref{background:#f3f7f6;padding:12px;border-radius:12px}.source-ref p{font-size:12px;margin:2px 0}.source-ref b{font-size:12.5px}.report-table{width:100%;border-collapse:collapse}.report-table th,.report-table td{padding:10px 7px;border-bottom:1px solid var(--border);text-align:left;font-size:12px}.report-table td:last-child{text-align:right;font-weight:700}.footer-source{display:flex;gap:8px;flex-wrap:wrap}.letter-badge{height:23px;min-width:23px;border-radius:6px;background:#e8f3ef;display:inline-grid;place-items:center;font-size:11px;font-weight:850;color:var(--teal)}
+@media(min-width:560px){.page{padding-left:26px;padding-right:26px}.topbar{padding-left:26px;padding-right:26px}.hero{padding:33px}.hero-icon{width:230px;height:230px}.grid-module{grid-template-columns:repeat(2,minmax(0,1fr))}.flashcard-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.progress-layout{grid-template-columns:repeat(3,minmax(0,1fr))}.reader-article .reading-section{padding:24px}.module-hero{padding:26px}.quiz-card{padding:28px}.stats{gap:15px}.stat{padding:17px}}
+@media(min-width:1020px){.app-shell{display:grid;grid-template-columns:250px minmax(0,1fr)}.desktop-sidebar{display:flex;position:sticky;top:0;align-self:start;height:100vh;background:white;border-right:1px solid var(--border);padding:25px 15px;flex-direction:column;gap:28px}.sidebar-links{display:grid;gap:5px}.sidebar-link{display:flex;align-items:center;gap:12px;border-radius:12px;padding:11px 13px;color:#577074;text-decoration:none;font-size:13px;font-weight:700}.sidebar-link:hover{background:#f2f8f5}.sidebar-link.active{background:#e6f4f0;color:var(--teal)}.sidebar-end{margin-top:auto;border-radius:14px;padding:15px;background:#edf7f4;font-size:12px;color:#496f69}.sidebar-end strong{color:#1d514d}.main-area{max-width:1210px;width:100%}.mobile-nav{display:none}.mobile-top-actions{display:none}.topbar{height:70px;padding:14px 34px}.topbar .brand{display:none}.page{padding:12px 34px 45px;max-width:1130px}.hero{min-height:265px;padding:32px}.grid-module{grid-template-columns:repeat(2,minmax(0,1fr))}.content-grid{grid-template-columns:minmax(0,1fr) 230px;align-items:start}.right-rail{display:block}.reading-section{padding:24px}.footer{padding:25px 10px 35px}.toast{bottom:25px}.hero-icon{right:15px;width:260px;height:260px}}
+@media(min-width:1240px){.grid-module{grid-template-columns:repeat(3,minmax(0,1fr))}.main-area{max-width:1320px}.content-grid{grid-template-columns:minmax(0,1fr) 255px}.page{padding-left:42px;padding-right:42px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:0.01ms!important;animation-duration:0.01ms!important}}
+
+</style></head><body><div id="app"></div><script>
+window.COURSE_DATA = {
+  "modules": [
+    {
+      "id": "m0",
+      "title": "Bắt đầu từ bức tranh chung",
+      "eyebrow": "Khởi động",
+      "icon": "compass",
+      "subtitle": "Hiểu ngành, người tham gia và cách học",
+      "badge": "Chưa chuyên môn",
+      "source": null
+    },
+    {
+      "id": "m1",
+      "title": "Pháp luật & các bên liên quan",
+      "eyebrow": "Pháp luật",
+      "icon": "scale",
+      "subtitle": "Biết ai có quyền, ai chịu trách nhiệm",
+      "badge": "Core",
+      "source": "law"
+    },
+    {
+      "id": "m2",
+      "title": "Tiếp nhận hồ sơ & bàn giao",
+      "eyebrow": "Bàn giao",
+      "icon": "folders",
+      "subtitle": "Nhận diện hồ sơ và rủi ro khi tiếp nhận",
+      "badge": "Core",
+      "source": "handover"
+    },
+    {
+      "id": "m3",
+      "title": "Tổ chức vận hành tòa nhà",
+      "eyebrow": "Vận hành",
+      "icon": "building",
+      "subtitle": "Từ tiền khai trương đến hoạt động hằng ngày",
+      "badge": "Core",
+      "source": "projects"
+    },
+    {
+      "id": "m4",
+      "title": "Hợp đồng & nhà thầu",
+      "eyebrow": "Hợp đồng",
+      "icon": "file-check",
+      "subtitle": "Theo dõi chất lượng dịch vụ bằng bằng chứng",
+      "badge": "Core",
+      "source": "contracts"
+    },
+    {
+      "id": "m5",
+      "title": "Tài chính & ngân sách",
+      "eyebrow": "Tài chính",
+      "icon": "wallet",
+      "subtitle": "Hiểu nguồn thu, chi phí và kiểm soát ngân sách",
+      "badge": "Core",
+      "source": "finance"
+    },
+    {
+      "id": "m6",
+      "title": "Tình huống tích hợp",
+      "eyebrow": "Thực hành",
+      "icon": "flag",
+      "subtitle": "Kết nối kiến thức thành quyết định thực tế",
+      "badge": "Ứng dụng",
+      "source": null
+    }
+  ],
+  "sources": {
+    "law": {
+      "name": "Tổng hợp các văn bản luật – VSIP Bắc Ninh",
+      "short": "Pháp luật",
+      "file": "PDF - BUỔI 1 - TỔNG HỢP CÁC VĂN BẢN LUẬT - VSIP BAC NINH.pdf",
+      "pages": 60,
+      "remark": "Slide giảng viên Nguyễn Duy Thành; một số điều khoản có thể đã sửa đổi."
+    },
+    "contracts": {
+      "name": "Chuyên đề 2 – Hợp đồng QLVH chung cư",
+      "short": "Hợp đồng",
+      "file": "CHUYÊN ĐỀ 2 - HĐ QLVH CHUNG CƯ.pdf",
+      "pages": 54,
+      "remark": "Slide giảng viên Nguyễn Duy Thành, Global Home."
+    },
+    "projects": {
+      "name": "Quản lý dự án",
+      "short": "Quản lý dự án",
+      "file": "QUAN LY DU AN.pdf",
+      "pages": 33,
+      "remark": "Slide của Viện Đào tạo và Hợp tác Giáo dục."
+    },
+    "finance": {
+      "name": "Quản lý tài chính",
+      "short": "Quản lý tài chính",
+      "file": "QUẢN LÝ TÀI CHÍNH.pdf",
+      "pages": 30,
+      "remark": "Slide của Viện Đào tạo và Hợp tác Giáo dục."
+    },
+    "handover": {
+      "name": "Kiến thức cơ bản về tiếp nhận hồ sơ nhà chung cư (1)",
+      "short": "Tiếp nhận hồ sơ",
+      "file": "KIẾN THỨC CƠ BẢN VỀ TIẾP NHẬN HỒ SƠ NHÀ CHUNG CƯ (1).pdf",
+      "pages": 47,
+      "remark": "Bản 47 trang được chọn làm nguồn; có viện dẫn pháp luật năm 2026 cần kiểm tra."
+    }
+  },
+  "lessons": [
+    {
+      "id": "m0l1",
+      "module": "m0",
+      "title": "Nghề quản lý vận hành làm gì?",
+      "source": null,
+      "pages": "",
+      "why": "Đi làm trong tòa nhà không chỉ là sửa chữa: đó là phối hợp con người, dịch vụ, tài sản và rủi ro.",
+      "points": [
+        {
+          "label": "Định nghĩa công việc",
+          "body": "Quản lý vận hành tổ chức nguồn lực để tòa nhà hoạt động ổn định, an toàn, đúng cam kết dịch vụ."
+        },
+        {
+          "label": "Nhóm công việc",
+          "body": "Một ban quản lý thường kết nối chăm sóc cư dân, an ninh, vệ sinh, kỹ thuật, hành chính và tài chính."
+        },
+        {
+          "label": "Vai trò điều phối",
+          "body": "Nhiều vấn đề phải chuyển đúng người xử lý và theo dõi đến khi khép lại, không phải tự xử lý mọi việc."
+        }
+      ],
+      "example": "Cư dân báo sảnh thang máy bẩn và đèn hành lang chập chờn. Người điều phối ghi nhận, giao việc cho hai bộ phận khác nhau, rồi kiểm tra kết quả và phản hồi cư dân.",
+      "task": "Hãy viết 3 công việc bạn có thể đảm nhiệm tốt từ kinh nghiệm nghề nghiệp cũ.",
+      "deep": "Tóm lược từ sơ đồ tổ chức và các nhóm công việc trong Quản lý dự án, tr.25–33; Quản lý tài chính, tr.5–6.",
+      "time": 6
+    },
+    {
+      "id": "m0l2",
+      "module": "m0",
+      "title": "Ai là ai trong một chung cư?",
+      "source": null,
+      "pages": "",
+      "why": "Phân biệt đúng các bên giúp tránh nhầm thẩm quyền khi đọc hợp đồng hoặc tiếp nhận phản ánh.",
+      "points": [
+        {
+          "label": "Chủ đầu tư",
+          "body": "Gắn với việc phát triển dự án, cung cấp hồ sơ, bàn giao và trách nhiệm tương ứng theo pháp luật."
+        },
+        {
+          "label": "Hội nghị và Ban quản trị",
+          "body": "Hội nghị là cơ chế để các chủ sở hữu quyết định vấn đề thuộc thẩm quyền; Ban quản trị thực hiện các công việc được giao."
+        },
+        {
+          "label": "Đơn vị quản lý vận hành",
+          "body": "Doanh nghiệp tổ chức cung cấp dịch vụ vận hành theo hợp đồng và điều kiện pháp luật."
+        },
+        {
+          "label": "Ban quản lý tại tòa nhà",
+          "body": "Nhóm trực tiếp triển khai dịch vụ, tiếp nhận thông tin, điều phối nhà thầu và báo cáo."
+        }
+      ],
+      "example": "Một cư dân đề nghị thay đơn vị vận hành. Nhân viên không được tự quyết; cần xác định quy trình, thẩm quyền của Hội nghị/Ban quản trị và hợp đồng đang có.",
+      "task": "Xếp bốn nhóm trên theo câu hỏi: “ai quyết định?”, “ai triển khai?”, “ai phản hồi cư dân?”.",
+      "deep": "Tài liệu luật tr.11–33; tài liệu tài chính tr.4–7.",
+      "time": 7
+    },
+    {
+      "id": "m0l3",
+      "module": "m0",
+      "title": "Cách học để nhớ và áp dụng",
+      "source": null,
+      "pages": "",
+      "why": "Đọc liên tục 200 trang slide không tự động trở thành khả năng làm việc.",
+      "points": [
+        {
+          "label": "Bước 1 – Nắm ý chính",
+          "body": "Mỗi bài tập trung vào một vấn đề: vì sao quan trọng, cần biết gì, dùng khi nào."
+        },
+        {
+          "label": "Bước 2 – Tự gợi nhớ",
+          "body": "Trả lời câu hỏi ngắn trước khi xem đáp án để phát hiện phần chưa chắc."
+        },
+        {
+          "label": "Bước 3 – Thử làm",
+          "body": "Hoàn thành nhiệm vụ mô phỏng: checklist, ghi nhận sự cố, hợp đồng hoặc ngân sách."
+        },
+        {
+          "label": "Bước 4 – Ôn lại",
+          "body": "Quay lại thẻ thuật ngữ và bài làm sai; không cần học hết trong một lần."
+        }
+      ],
+      "example": "Sau khi đọc bài về hồ sơ hoàn công, hãy đóng bài học và tự liệt kê xem hồ sơ đó dùng để làm gì, trước khi mở lại đối chiếu.",
+      "task": "Chọn một mục tiêu: học 15 phút mỗi ngày, hay học trọn một module cuối tuần.",
+      "deep": "Hướng dẫn học tập do ứng dụng thiết kế, không phải nội dung quy định của PDF.",
+      "time": 5
+    },
+    {
+      "id": "m1l1",
+      "module": "m1",
+      "title": "Phần sở hữu riêng và phần sở hữu chung",
+      "source": "law",
+      "pages": "5–6",
+      "why": "Mọi tranh luận về sửa chữa, chi phí và sử dụng không gian đều có thể bắt đầu từ câu hỏi sở hữu.",
+      "points": [
+        {
+          "label": "Sở hữu riêng",
+          "body": "Tài liệu nhắc đến phần diện tích căn hộ và trang thiết bị sử dụng riêng gắn với căn hộ; cần đối chiếu hợp đồng và hồ sơ dự án."
+        },
+        {
+          "label": "Sở hữu chung",
+          "body": "Bao gồm những bộ phận, kết cấu, thiết bị và diện tích dùng chung theo quy định và hồ sơ xác lập."
+        },
+        {
+          "label": "Đừng suy đoán theo vị trí",
+          "body": "Một không gian ở sát căn hộ chưa chắc là sở hữu riêng; cần kiểm tra căn cứ pháp lý và bản vẽ."
+        },
+        {
+          "label": "Tác động vận hành",
+          "body": "Phân loại sở hữu quyết định việc quản lý, bảo trì, sử dụng và phân bổ trách nhiệm."
+        }
+      ],
+      "example": "Cư dân muốn đặt tủ trong hành lang tầng. Trước khi chấp thuận, Ban quản lý phải kiểm tra nội quy, hồ sơ diện tích chung và yêu cầu an toàn.",
+      "task": "Ghi ra 3 ví dụ thường gặp của phần dùng chung và giải thích vì sao không thể tự ý thay đổi.",
+      "deep": "Tài liệu trích Điều 142 Luật Nhà ở 2023; xem trạng thái hiệu lực văn bản cập nhật.",
+      "time": 7
+    },
+    {
+      "id": "m1l2",
+      "module": "m1",
+      "title": "Diện tích căn hộ và chỗ để xe",
+      "source": "law",
+      "pages": "6–10",
+      "why": "Hai chủ đề dễ phát sinh phản ánh và tranh chấp tại dự án.",
+      "points": [
+        {
+          "label": "Diện tích sử dụng",
+          "body": "Slide giới thiệu cách đo thông thủy và những phần không tính vào diện tích căn hộ."
+        },
+        {
+          "label": "Chỗ để xe",
+          "body": "Tài liệu dành nhiều trang để phân biệt vị trí, quyền sở hữu và phương án quản lý theo loại chỗ đỗ."
+        },
+        {
+          "label": "Chứng cứ cần xem",
+          "body": "Hợp đồng mua bán, bản vẽ được phê duyệt, hồ sơ phân định và nội quy vận hành."
+        },
+        {
+          "label": "Ứng xử nghiệp vụ",
+          "body": "Không kết luận quyền sở hữu chỉ dựa trên lời nói hoặc cách sử dụng lâu nay."
+        }
+      ],
+      "example": "Hai cư dân tranh luận về quyền ưu tiên một ô đỗ xe. Người tiếp nhận nên lập phiếu phản ánh, yêu cầu hồ sơ liên quan và chuyển đúng bộ phận.",
+      "task": "Viết ba câu hỏi cần hỏi trước khi kết luận về một chỗ đỗ xe.",
+      "deep": "Điều 143–144 trong slide; cách áp dụng thực tế tùy hồ sơ và quy định hiện hành.",
+      "time": 7
+    },
+    {
+      "id": "m1l3",
+      "module": "m1",
+      "title": "Hội nghị nhà chung cư",
+      "source": "law",
+      "pages": "11–13",
+      "why": "Nhiều quyết định lớn về vận hành không do nhân viên hiện trường tự đưa ra.",
+      "points": [
+        {
+          "label": "Vai trò",
+          "body": "Hội nghị là cơ chế thảo luận và thông qua các nội dung thuộc thẩm quyền trong quản lý sử dụng chung cư."
+        },
+        {
+          "label": "Quyết định",
+          "body": "Slide trình bày đối tượng tham gia, nội dung biểu quyết và các bước lập quyết định."
+        },
+        {
+          "label": "Giá trị công việc",
+          "body": "Nhân viên vận hành cần biết quyết định nào là căn cứ để triển khai, và lưu được nghị quyết, biên bản."
+        },
+        {
+          "label": "Giới hạn",
+          "body": "Điều kiện biểu quyết, tỷ lệ và thẩm quyền cụ thể cần kiểm tra văn bản áp dụng đang có hiệu lực."
+        }
+      ],
+      "example": "Tòa nhà muốn đổi phương án vệ sinh. Trưởng ban quản lý cần xem đó là điều chỉnh vận hành trong hợp đồng hay thay đổi thuộc thẩm quyền Hội nghị.",
+      "task": "Tạo danh sách 4 tài liệu nên lưu sau một Hội nghị nhà chung cư.",
+      "deep": "Theo Điều 145 trong slide pháp luật.",
+      "time": 7
+    },
+    {
+      "id": "m1l4",
+      "module": "m1",
+      "title": "Ban quản trị: cơ cấu và nhiệm vụ",
+      "source": "law",
+      "pages": "14–17",
+      "why": "Ban quản trị và Ban quản lý nghe giống nhau nhưng không phải một.",
+      "points": [
+        {
+          "label": "Ban quản trị",
+          "body": "Có vai trò đại diện, quản trị theo quy định; việc thành lập và mô hình phụ thuộc loại nhà chung cư."
+        },
+        {
+          "label": "Ban quản lý",
+          "body": "Là bộ phận làm việc tại dự án, phối hợp dịch vụ và chịu sự tổ chức của đơn vị vận hành."
+        },
+        {
+          "label": "Đầu mối trao đổi",
+          "body": "Các đề xuất phí, hợp đồng, bảo trì, chất lượng dịch vụ cần chuyển đúng người/phạm vi phê duyệt."
+        },
+        {
+          "label": "Giới hạn chức năng",
+          "body": "Không dùng chức danh Trưởng ban quản lý để thay cho quyền hạn của Ban quản trị."
+        }
+      ],
+      "example": "Một nhân viên nhận yêu cầu “đổi nhà thầu” từ cá nhân cư dân. Cần báo cáo, kiểm tra hợp đồng và thẩm quyền chứ không tự ký nhà thầu mới.",
+      "task": "Vẽ sơ đồ ba ô: Hội nghị – Ban quản trị – Đơn vị vận hành/Ban quản lý.",
+      "deep": "Trang 14–17, Điều 146 và nội dung tổ chức BQT.",
+      "time": 7
+    },
+    {
+      "id": "m1l5",
+      "module": "m1",
+      "title": "Quyền và trách nhiệm của Ban quản trị",
+      "source": "law",
+      "pages": "18–28",
+      "why": "Quản lý tốt bắt đầu từ hiểu đúng ai có quyền quyết định và ai phải giải trình.",
+      "points": [
+        {
+          "label": "Quyền cơ bản",
+          "body": "Slide nêu các nhóm quyền liên quan đến quản lý, lựa chọn đơn vị vận hành, kinh phí và yêu cầu thông tin."
+        },
+        {
+          "label": "Trách nhiệm",
+          "body": "Tổ chức thực hiện quyết định đúng thẩm quyền; quản lý, giám sát và công khai những nội dung liên quan."
+        },
+        {
+          "label": "Kiểm soát bằng hồ sơ",
+          "body": "Biên bản, báo cáo, quyết định và chứng từ quan trọng hơn chỉ đạo miệng."
+        },
+        {
+          "label": "Xử lý vi phạm",
+          "body": "Một hành vi sai có thể dẫn tới tranh chấp hoặc trách nhiệm pháp lý; không tự giải quyết ngoài thẩm quyền."
+        }
+      ],
+      "example": "Ban quản trị yêu cầu báo cáo hạng mục bảo trì. Ban quản lý cần cung cấp số liệu và chứng cứ, không chỉ báo “đã xử lý”.",
+      "task": "Soạn mẫu báo cáo ba mục: tình trạng, bằng chứng, kiến nghị.",
+      "deep": "Trang 18–28 dẫn Điều 147–148 Luật Nhà ở 2023.",
+      "time": 8
+    },
+    {
+      "id": "m1l6",
+      "module": "m1",
+      "title": "Đơn vị quản lý vận hành và điều kiện",
+      "source": "law",
+      "pages": "29–33",
+      "why": "Nhà tuyển dụng trong lĩnh vực này thường cần nhân sự hiểu trách nhiệm của doanh nghiệp vận hành.",
+      "points": [
+        {
+          "label": "Đơn vị QLVH",
+          "body": "Là tổ chức thực hiện các công việc vận hành theo điều kiện chuyên môn và hợp đồng."
+        },
+        {
+          "label": "Dịch vụ",
+          "body": "Gắn với vận hành hệ thống kỹ thuật và cung cấp dịch vụ vệ sinh, an ninh, chăm sóc, bảo trì theo phân công."
+        },
+        {
+          "label": "Điều kiện pháp lý",
+          "body": "Slide trích Điều 149–150 và quy định hồ sơ, nhân sự; cần kiểm tra bản hợp nhất hiện hành."
+        },
+        {
+          "label": "Nhân viên và chứng nhận",
+          "body": "Chứng nhận bồi dưỡng hỗ trợ kiến thức nghiệp vụ; không thay thế bằng chuyên môn kỹ thuật hoặc kinh nghiệm."
+        }
+      ],
+      "example": "Nhà tuyển dụng phỏng vấn: “Đơn vị vận hành khác ban quản trị ở đâu?” Bạn cần giải thích vai trò hợp đồng và thực thi.",
+      "task": "Viết định nghĩa 2 câu cho “đơn vị quản lý vận hành” bằng lời của bạn.",
+      "deep": "Đối chiếu Điều 149–150 trên slide với quy định mới nhất.",
+      "time": 8
+    },
+    {
+      "id": "m1l7",
+      "module": "m1",
+      "title": "Giá dịch vụ quản lý vận hành",
+      "source": "law",
+      "pages": "34–36",
+      "why": "Cư dân thường hỏi tiền phí dùng vào việc gì và ai có quyền điều chỉnh.",
+      "points": [
+        {
+          "label": "Bản chất phí",
+          "body": "Phục vụ những công việc quản lý vận hành theo phạm vi dịch vụ và phương án tài chính."
+        },
+        {
+          "label": "Không nhập nhằng",
+          "body": "Slide nhắc phải phân biệt phí vận hành với các khoản khác như kinh phí bảo trì."
+        },
+        {
+          "label": "Minh bạch",
+          "body": "Cần có phương pháp, căn cứ, hợp đồng và quyết định hợp lệ; tránh trả lời bằng suy đoán."
+        },
+        {
+          "label": "Liên hệ tài chính",
+          "body": "Bạn sẽ học cách lập ngân sách và cân đối các khoản thu chi ở module 5."
+        }
+      ],
+      "example": "Cư dân phản ánh phí tăng nhưng dịch vụ không khác. Người điều phối ghi nhận tiêu chí dịch vụ, kỳ áp dụng và chuyển đúng đầu mối giải thích.",
+      "task": "Thử giải thích trong 30 giây sự khác nhau giữa “phí quản lý vận hành” và “kinh phí bảo trì”.",
+      "deep": "Trang 34–36, Điều 151 Luật Nhà ở 2023.",
+      "time": 7
+    },
+    {
+      "id": "m1l8",
+      "module": "m1",
+      "title": "Bảo trì, quyền cư dân và giải quyết tranh chấp",
+      "source": "law",
+      "pages": "44–59",
+      "why": "Hiểu mối liên hệ giữa bảo trì, trách nhiệm các bên và quy trình giải quyết tranh chấp.",
+      "points": [
+        {
+          "label": "Quy chế chung",
+          "body": "Slide Thông tư 05 trình bày các nội dung quản lý, hội nghị, Ban quản trị, dịch vụ và bảo trì."
+        },
+        {
+          "label": "Bảo trì",
+          "body": "Cần phân biệt kế hoạch, hạng mục được bảo trì, kiểm soát chi và giám sát nghiệm thu."
+        },
+        {
+          "label": "Quyền cư dân",
+          "body": "Cần truyền thông nội quy, cơ chế phản ánh và xử lý theo trách nhiệm."
+        },
+        {
+          "label": "Tranh chấp",
+          "body": "Thu thập chứng cứ và chuyển đúng người/thẩm quyền, tránh hứa hẹn kết quả pháp lý."
+        }
+      ],
+      "example": "Cư dân nói cửa thoát hiểm bị chặn. Hãy ưu tiên an toàn, ghi nhận bằng chứng, liên hệ đúng người xử lý ngay và theo dõi kết quả.",
+      "task": "Thiết kế quy trình 4 bước: tiếp nhận – phân loại – xử lý – phản hồi.",
+      "deep": "Trang 44–59 tập hợp nội dung quy chế theo Thông tư 05/2024/TT-BXD.",
+      "time": 8
+    },
+    {
+      "id": "m2l1",
+      "module": "m2",
+      "title": "Bàn giao hồ sơ: vì sao quan trọng?",
+      "source": "handover",
+      "pages": "6–9",
+      "why": "Không có hồ sơ đầy đủ, nhân sự vận hành khó xác định hệ thống, lịch bảo hành và trách nhiệm.",
+      "points": [
+        {
+          "label": "Hồ sơ nhà ở",
+          "body": "Slide dẫn Điều 119–120 về lập, lưu trữ và quản lý hồ sơ."
+        },
+        {
+          "label": "Trước bàn giao",
+          "body": "Dự án cần hồ sơ nghiệm thu, tài liệu PCCC, bản vẽ và các tài liệu khác theo quy định."
+        },
+        {
+          "label": "Bàn giao bằng văn bản",
+          "body": "Danh mục, tình trạng tài liệu, người giao – nhận và ngày tháng nên rõ ràng."
+        },
+        {
+          "label": "Bài học nghề",
+          "body": "Người tiếp nhận giỏi phát hiện thiếu sót trước khi ký xác nhận, không chỉ đếm số tập giấy."
+        }
+      ],
+      "example": "Nhà thầu bàn giao bản vẽ PDF nhưng không có danh mục trang. Hãy ghi mục “thiếu danh mục bản vẽ” vào biên bản thay vì tự coi đã đủ.",
+      "task": "Tạo checklist 5 cột: STT, tên hồ sơ, bản gốc/bản sao, tình trạng, ghi chú.",
+      "deep": "Trích Điều 119–120 và Điều 24 Nghị định 95 trong slide.",
+      "time": 7
+    },
+    {
+      "id": "m2l2",
+      "module": "m2",
+      "title": "Ai bàn giao, ai tiếp nhận, ai lưu?",
+      "source": "handover",
+      "pages": "9–13",
+      "why": "Sai đầu mối bàn giao có thể khiến hồ sơ thất lạc hoặc không xác định được trách nhiệm.",
+      "points": [
+        {
+          "label": "Chủ đầu tư",
+          "body": "Tài liệu mô tả trách nhiệm lập và bàn giao hồ sơ nhà chung cư."
+        },
+        {
+          "label": "Ban quản trị",
+          "body": "Tiếp nhận và lưu trữ theo quy định; trong trường hợp có đơn vị vận hành, cơ chế cung cấp hồ sơ cần rõ."
+        },
+        {
+          "label": "Biên bản bàn giao",
+          "body": "Ghi nhận hiện trạng, danh mục, người ký và tài liệu còn thiếu."
+        },
+        {
+          "label": "Kiểm đếm tại hiện trường",
+          "body": "Hồ sơ cần gắn với việc đối chiếu trang thiết bị và phần sở hữu chung thực tế."
+        }
+      ],
+      "example": "Một máy bơm có trên danh mục nhưng chưa tìm thấy ngoài hiện trường. Hãy ghi ngoại lệ và yêu cầu làm rõ, không ký “đủ 100%”.",
+      "task": "Hãy viết một câu xác nhận bàn giao có nêu rõ các ngoại lệ.",
+      "deep": "Trang 9–13 dẫn Điều 10–11 Quy chế và quy trình kiểm đếm.",
+      "time": 8
+    },
+    {
+      "id": "m2l3",
+      "module": "m2",
+      "title": "Nhóm hồ sơ pháp lý",
+      "source": "handover",
+      "pages": "16–20",
+      "why": "Hồ sơ pháp lý giúp kiểm tra căn cứ đưa công trình vào sử dụng và trách nhiệm của các bên.",
+      "points": [
+        {
+          "label": "Các nhóm cần nhận diện",
+          "body": "Hồ sơ dự án, các văn bản nghiệm thu/chấp thuận và giấy tờ liên quan phải được liệt kê theo danh mục thực tế."
+        },
+        {
+          "label": "Mục đích sử dụng",
+          "body": "Chứng minh căn cứ nghiệm thu và quyền quản lý tài sản, hỗ trợ đối chiếu khi có tranh chấp."
+        },
+        {
+          "label": "Cách kiểm tra",
+          "body": "Xem tên tài liệu, cơ quan/đơn vị phát hành, mã hiệu, ngày tháng và tình trạng bản."
+        },
+        {
+          "label": "Tình trạng pháp lý",
+          "body": "Không tự kết luận một giấy tờ hết/hợp lệ chỉ từ tên file; cần bộ phận chuyên môn xác minh."
+        }
+      ],
+      "example": "Nhân viên thấy hai biên bản nghiệm thu cùng tên nhưng số hiệu khác. Hãy lưu riêng và hỏi đầu mối giải thích quan hệ giữa hai biên bản.",
+      "task": "Lập ba trường dữ liệu quan trọng nhất của một hồ sơ pháp lý cần quản lý.",
+      "deep": "Các trang 16–20 có nhiều hình hồ sơ mẫu; trong ứng dụng chỉ tóm tắt, không tái đăng bản mẫu.",
+      "time": 8
+    },
+    {
+      "id": "m2l4",
+      "module": "m2",
+      "title": "Hồ sơ kỹ thuật, thiết bị và bảo hành",
+      "source": "handover",
+      "pages": "20–25",
+      "why": "Bản vẽ và tài liệu thiết bị là “bản đồ” cho bảo trì và xử lý sự cố.",
+      "points": [
+        {
+          "label": "Hồ sơ kỹ thuật",
+          "body": "Nhận diện bản vẽ hoàn công, tài liệu nguồn gốc thiết bị và hợp đồng lắp đặt."
+        },
+        {
+          "label": "Quy trình vận hành",
+          "body": "Các hệ thống cần hướng dẫn vận hành, bảo dưỡng và thông số kỹ thuật."
+        },
+        {
+          "label": "Bảo hành",
+          "body": "Danh sách thời hạn bảo hành và nhà cung cấp giúp xác định đầu mối xử lý."
+        },
+        {
+          "label": "Kiểm soát phiên bản",
+          "body": "Bản vẽ đang sử dụng phải đối chiếu với bản bàn giao cuối cùng, không mặc nhiên dùng bản thiết kế ban đầu."
+        }
+      ],
+      "example": "Khi máy phát điện báo lỗi, không nên mò vận hành theo trí nhớ. Đội kỹ thuật cần tra cứu hướng dẫn, đầu mối bảo hành và thực hiện theo quy trình an toàn.",
+      "task": "Hãy liệt kê 4 thứ cần hỏi khi nhận hồ sơ một thiết bị kỹ thuật mới.",
+      "deep": "Các trang 20–25 và nội dung bàn giao tại trang 10 của PDF.",
+      "time": 8
+    },
+    {
+      "id": "m2l5",
+      "module": "m2",
+      "title": "PCCC, môi trường và khu vực chung",
+      "source": "handover",
+      "pages": "25–30",
+      "why": "Một tòa nhà an toàn đòi hỏi bộ hồ sơ kỹ thuật đi đôi với chứng từ nghiệm thu và tài liệu liên quan.",
+      "points": [
+        {
+          "label": "PCCC",
+          "body": "Slide liệt kê những hồ sơ liên quan đến chấp thuận/nghiệm thu và hệ thống PCCC."
+        },
+        {
+          "label": "Môi trường",
+          "body": "Có nội dung hồ sơ về xử lý nước thải và đánh giá/kế hoạch bảo vệ môi trường."
+        },
+        {
+          "label": "Khu để xe",
+          "body": "Bản vẽ mặt bằng có phân định khu vực để xe cho các nhóm chủ thể."
+        },
+        {
+          "label": "Cách xử lý",
+          "body": "Khi thiếu tài liệu, phải ghi nhận ngoại lệ và chuyển người có thẩm quyền/chuyên môn kiểm tra."
+        }
+      ],
+      "example": "Trong buổi tiếp nhận, hồ sơ hệ thống xử lý nước thải thiếu biên bản nghiệm thu. Người tiếp nhận cần ghi nhận thiếu và yêu cầu bổ sung trước bước xác nhận.",
+      "task": "Soạn 5 mục kiểm tra riêng cho “hồ sơ an toàn và môi trường”.",
+      "deep": "Trang 25–30 và Điều 24 Nghị định 95 trích trên slide.",
+      "time": 7
+    },
+    {
+      "id": "m2l6",
+      "module": "m2",
+      "title": "Kinh phí bảo trì và rủi ro bàn giao",
+      "source": "handover",
+      "pages": "31–43",
+      "why": "Hồ sơ bàn giao và bàn giao tiền kinh phí bảo trì có liên quan nhưng không phải một việc.",
+      "points": [
+        {
+          "label": "Kinh phí bảo trì",
+          "body": "Đây là khoản quản lý theo quy định riêng cho bảo trì phần sở hữu chung; khác phí quản lý vận hành thường kỳ."
+        },
+        {
+          "label": "Bàn giao",
+          "body": "Slide trích Điều 153–154 Luật Nhà ở và trình tự yêu cầu/cưỡng chế trong văn bản hướng dẫn."
+        },
+        {
+          "label": "Bằng chứng cần bảo quản",
+          "body": "Số dư, chứng từ ngân hàng, biên bản đối chiếu, quyết định và biên bản bàn giao."
+        },
+        {
+          "label": "Cẩn trọng pháp lý",
+          "body": "Các trang đề cập thẩm quyền hành chính có thể chịu ảnh hưởng thay đổi tổ chức chính quyền và văn bản năm 2026."
+        }
+      ],
+      "example": "Trong báo cáo, số dư quỹ bảo trì không khớp sổ đối chiếu. Cần lập bảng chênh lệch và yêu cầu xác minh, không tự điều chỉnh tiền.",
+      "task": "Tạo sơ đồ phân biệt: phí vận hành ≠ kinh phí bảo trì.",
+      "deep": "Trang 31–43; nội dung pháp lý cần rà soát hiệu lực.",
+      "time": 9
+    },
+    {
+      "id": "m2l7",
+      "module": "m2",
+      "title": "Đọc bản vẽ và kết thúc checklist bàn giao",
+      "source": "handover",
+      "pages": "44–47",
+      "why": "Đọc bản vẽ đúng ở mức nhận diện giúp giao việc chính xác và giảm rủi ro điều phối.",
+      "points": [
+        {
+          "label": "Bản vẽ hoàn công",
+          "body": "Phản ánh hiện trạng hoàn thành công trình theo hồ sơ được lập; phân biệt với bản thiết kế trước thi công."
+        },
+        {
+          "label": "Mã hiệu",
+          "body": "Tìm tên bản vẽ, tỉ lệ, ngày, ký hiệu, hạng mục và dấu nhận diện phiên bản."
+        },
+        {
+          "label": "Chuyển tuyến chuyên môn",
+          "body": "Người không có chuyên môn kỹ thuật không tự phê duyệt an toàn kết cấu hay thông số thiết bị."
+        },
+        {
+          "label": "Kết thúc bàn giao",
+          "body": "Biên bản phải có danh mục, tình trạng, người chịu trách nhiệm bổ sung và mốc theo dõi."
+        }
+      ],
+      "example": "Đội vận hành cần xác định sơ đồ cấp nước tầng 12. Người điều phối tìm đúng bản vẽ theo danh mục và chuyển kỹ thuật đối chiếu.",
+      "task": "Lập 4 trạng thái cho danh mục hồ sơ: đủ, thiếu, cần xác minh, không áp dụng.",
+      "deep": "Trang 44–47 sử dụng nhiều hình ảnh bản vẽ nên cần đối chiếu trực tiếp trên tài liệu gốc.",
+      "time": 8
+    },
+    {
+      "id": "m3l1",
+      "module": "m3",
+      "title": "Hai giai đoạn của vòng đời vận hành",
+      "source": "projects",
+      "pages": "2–6",
+      "why": "Pre-opening và hoạt động thường kỳ yêu cầu hai cách tổ chức công việc khác nhau.",
+      "points": [
+        {
+          "label": "Pre-opening",
+          "body": "Chuẩn bị trước khi tòa nhà vận hành chính thức: hồ sơ, nhân sự, hệ thống, nhà thầu, ngân sách."
+        },
+        {
+          "label": "Operations",
+          "body": "Duy trì dịch vụ ổn định, an toàn, kiểm soát chi phí và xử lý tình huống trong quá trình vận hành."
+        },
+        {
+          "label": "Liên tục",
+          "body": "Công việc chuẩn bị càng cẩn thận thì quá trình chuyển sang hoạt động càng ít vướng mắc."
+        },
+        {
+          "label": "Tư duy quản lý",
+          "body": "Luôn xác định việc nào phải hoàn thành trước khi cư dân sử dụng dịch vụ."
+        }
+      ],
+      "example": "Một dự án chuẩn bị đón cư dân nhưng chưa có danh sách nhà thầu bảo vệ. Đây là rủi ro pre-opening cần xử lý trước ngày bàn giao.",
+      "task": "Phân loại: đào tạo lễ tân, báo cáo công nợ tháng, kiểm tra hồ sơ PCCC — việc nào thuộc giai đoạn nào?",
+      "deep": "Trang 2–6 và định nghĩa giai đoạn vận hành ở trang 25.",
+      "time": 7
+    },
+    {
+      "id": "m3l2",
+      "module": "m3",
+      "title": "Thiết kế bộ máy và bố trí nhân sự",
+      "source": "projects",
+      "pages": "7–8",
+      "why": "Chất lượng vận hành phụ thuộc rõ vai trò và khả năng phối hợp.",
+      "points": [
+        {
+          "label": "Sơ đồ tổ chức",
+          "body": "Slide nêu Trưởng Ban quản lý, hành chính, dịch vụ khách hàng, kế toán, kỹ thuật và giám sát."
+        },
+        {
+          "label": "Mô tả công việc",
+          "body": "Cần có nhiệm vụ, ca làm, người báo cáo, quyền phê duyệt và người thay thế."
+        },
+        {
+          "label": "Đào tạo nhân sự",
+          "body": "Kế hoạch đào tạo đi cùng lộ trình nhận bàn giao và đưa dự án vào hoạt động."
+        },
+        {
+          "label": "Điểm chạm",
+          "body": "Một sự cố có thể cần an ninh, kỹ thuật, chăm sóc cư dân cùng phối hợp."
+        }
+      ],
+      "example": "Một nhân viên ca tối không biết ai thay Trưởng ca khi nghỉ phép. Ban quản lý phải có danh sách liên hệ và quy trình bàn giao ca.",
+      "task": "Thiết kế sơ đồ ba tuyến: cư dân → đầu mối tiếp nhận → bộ phận xử lý.",
+      "deep": "Trang 7–8 của tài liệu dự án.",
+      "time": 7
+    },
+    {
+      "id": "m3l3",
+      "module": "m3",
+      "title": "Ngân sách tiền khai trương",
+      "source": "projects",
+      "pages": "9–12",
+      "why": "Dự án chưa hoạt động vẫn có những khoản chi thiết yếu cần dự tính.",
+      "points": [
+        {
+          "label": "Chi phí chuẩn bị",
+          "body": "Văn phòng Ban quản lý, trang thiết bị, vật tư, nhân sự và các hạng mục khởi động."
+        },
+        {
+          "label": "Quy trình kế toán",
+          "body": "Tài liệu yêu cầu thiết lập quy trình tài chính trước ngày dự án hoạt động."
+        },
+        {
+          "label": "Dự toán phí",
+          "body": "Rà soát các mức phí liên quan đến vận hành, thi công và sử dụng hệ thống theo bối cảnh dự án."
+        },
+        {
+          "label": "Điều chỉnh thực tế",
+          "body": "Ngân sách phải phản ánh tiến độ bàn giao và phạm vi công việc, không chỉ là bảng chi cố định."
+        }
+      ],
+      "example": "Lịch bàn giao sớm hơn dự kiến hai tuần. Cần rà soát chi phí tăng ca, bổ sung nhân sự tiếp đón và vật tư vận hành.",
+      "task": "Lập 5 khoản chi cần dự toán cho một văn phòng Ban quản lý mới.",
+      "deep": "Trang 9–12 của tài liệu dự án; môn quản lý tài chính sẽ đi sâu hơn.",
+      "time": 7
+    },
+    {
+      "id": "m3l4",
+      "module": "m3",
+      "title": "An toàn lao động, hồ sơ và sổ tay cư dân",
+      "source": "projects",
+      "pages": "13–16",
+      "why": "Quy trình và thông tin sẵn có giúp giảm nguy cơ khi tòa nhà bắt đầu sử dụng.",
+      "points": [
+        {
+          "label": "An toàn",
+          "body": "Tài liệu yêu cầu nội quy làm việc, huấn luyện an toàn và quy trình ứng phó sự cố."
+        },
+        {
+          "label": "Hồ sơ",
+          "body": "Lập danh sách hồ sơ pháp lý, môi trường, PCCC và các đầu mục liên quan."
+        },
+        {
+          "label": "Sổ tay cư dân",
+          "body": "Gồm nội quy, đầu mối liên hệ, tiện ích, quyền và nghĩa vụ và thông tin khẩn cấp."
+        },
+        {
+          "label": "Truyền thông",
+          "body": "Người dân cần biết cách báo sự cố và nhận phản hồi, không chỉ nhận một tập tài liệu."
+        }
+      ],
+      "example": "Trước ngày cư dân nhận nhà, số trực sự cố bị thiếu trên bảng tin. Cần kiểm tra danh bạ và thông báo lại trước khi phát sinh tình huống.",
+      "task": "Viết trang đầu của “Sổ tay cư dân” gồm 5 thông tin thiết yếu.",
+      "deep": "Trang 13–16.",
+      "time": 7
+    },
+    {
+      "id": "m3l5",
+      "module": "m3",
+      "title": "Tiếp nhận tài sản và chuẩn bị nhà thầu",
+      "source": "projects",
+      "pages": "17–24",
+      "why": "Bàn giao không chỉ là ký hồ sơ; còn là xác định tài sản, cấu hình hệ thống và nhà cung cấp.",
+      "points": [
+        {
+          "label": "Kiểm kê",
+          "body": "Tài sản gắn liền và tài sản rời được lập danh mục, số lượng và tình trạng."
+        },
+        {
+          "label": "Hệ thống kỹ thuật",
+          "body": "Nhận bản vẽ, quy trình vận hành, thời hạn bảo hành, danh sách vật tư và thông tin liên hệ."
+        },
+        {
+          "label": "Nhà thầu phụ",
+          "body": "Đánh giá nhu cầu, ngân sách, năng lực, hợp đồng và thời điểm triển khai."
+        },
+        {
+          "label": "Vấn đề ưu tiên",
+          "body": "Bãi xe, cổng ra vào, camera, thẻ cư dân và hồ sơ dữ liệu người sử dụng cần chuẩn bị sớm."
+        }
+      ],
+      "example": "Bãi xe chưa có phương án phân luồng trước ngày nhận nhà. Điều phối viên phải báo cáo rủi ro, đề nghị kiểm tra hiện trường và chốt đầu mối xử lý.",
+      "task": "Làm mini-checklist “5 điều cần sẵn sàng trước ngày mở cửa”.",
+      "deep": "Trang 17–24.",
+      "time": 9
+    },
+    {
+      "id": "m3l6",
+      "module": "m3",
+      "title": "Quản lý dịch vụ và chăm sóc cư dân",
+      "source": "projects",
+      "pages": "25–29",
+      "why": "Đây là cụm nghiệp vụ sát nhất với nhóm việc làm giám sát dịch vụ và chăm sóc cư dân.",
+      "points": [
+        {
+          "label": "Chất lượng dịch vụ",
+          "body": "Bảo vệ, vệ sinh, cảnh quan, rác thải, diệt côn trùng và kiểm soát bảo trì phải theo tiêu chuẩn."
+        },
+        {
+          "label": "Vật tư tiêu hao",
+          "body": "Theo dõi sử dụng, tồn kho, chất lượng và so sánh với ngân sách."
+        },
+        {
+          "label": "Dữ liệu cư dân",
+          "body": "Quản lý danh sách và thông tin liên hệ phải phù hợp yêu cầu bảo vệ thông tin cá nhân."
+        },
+        {
+          "label": "Chăm sóc khách hàng",
+          "body": "Giải đáp, ghi nhận khiếu nại, chuyển xử lý và phản hồi theo quy trình."
+        }
+      ],
+      "example": "Cư dân báo vệ sinh tầng hầm kém ba ngày liên tục. Không chỉ báo lại nhà thầu: cần kiểm tra KPI, nhật ký vệ sinh, ảnh hiện trạng và thời hạn khắc phục.",
+      "task": "Tạo phiếu ghi nhận sự cố gồm nơi xảy ra, mức độ, người phụ trách, deadline và phản hồi.",
+      "deep": "Trang 25–29.",
+      "time": 8
+    },
+    {
+      "id": "m3l7",
+      "module": "m3",
+      "title": "Quản lý tài sản, rủi ro và báo cáo",
+      "source": "projects",
+      "pages": "30–33",
+      "why": "Nhân viên vận hành chứng minh kết quả bằng dữ liệu theo dõi và báo cáo.",
+      "points": [
+        {
+          "label": "Tài sản và CCDC",
+          "body": "Lập danh mục, kiểm kê định kỳ, kiểm soát nhập – xuất – tồn và vật tư tiêu hao."
+        },
+        {
+          "label": "Ngân sách",
+          "body": "Theo dõi phải thu, phải chi và so sánh chi phí với ngân sách."
+        },
+        {
+          "label": "Quản trị rủi ro",
+          "body": "Dự đoán nguy cơ, đánh giá ảnh hưởng, lập quy trình kiểm soát và chuẩn bị phương án ứng phó."
+        },
+        {
+          "label": "Báo cáo",
+          "body": "Tổng hợp triển khai tuần/tháng, thu chi, công nợ, bất cập và kiến nghị."
+        }
+      ],
+      "example": "Báo cáo tháng không chỉ ghi “mọi việc bình thường”; hãy nêu vấn đề tồn đọng, tác động, hướng xử lý và thời hạn.",
+      "task": "Tạo một mẫu báo cáo ngắn: công việc đã làm – rủi ro – đề xuất.",
+      "deep": "Trang 30–33.",
+      "time": 8
+    },
+    {
+      "id": "m4l1",
+      "module": "m4",
+      "title": "Hợp đồng là công cụ giao việc và kiểm soát",
+      "source": "contracts",
+      "pages": "4–10",
+      "why": "Một tòa nhà có thể hoạt động kém không phải vì thiếu người mà vì phạm vi công việc không rõ.",
+      "points": [
+        {
+          "label": "Bản chất",
+          "body": "Tài liệu trình bày hợp đồng là thỏa thuận xác lập quyền, nghĩa vụ giữa các bên."
+        },
+        {
+          "label": "Các nhóm hợp đồng",
+          "body": "Quản lý vận hành, bảo trì, dịch vụ và khai thác tài sản chung."
+        },
+        {
+          "label": "Công dụng",
+          "body": "Hợp đồng hỗ trợ giao việc, kiểm soát chất lượng, thanh toán, phân định trách nhiệm và giải quyết tranh chấp."
+        },
+        {
+          "label": "Nguyên tắc",
+          "body": "Phải rõ ràng, có căn cứ, đúng thẩm quyền và dễ kiểm chứng việc thực hiện."
+        }
+      ],
+      "example": "Hợp đồng vệ sinh chỉ ghi “đảm bảo sạch sẽ” mà không có tần suất. Khi tranh chấp xảy ra sẽ khó đo lường.",
+      "task": "Hãy chuyển “thang máy luôn sạch” thành một yêu cầu có cách kiểm tra.",
+      "deep": "Trang 4–10.",
+      "time": 7
+    },
+    {
+      "id": "m4l2",
+      "module": "m4",
+      "title": "Phạm vi hợp đồng dịch vụ QLVH",
+      "source": "contracts",
+      "pages": "11–14",
+      "why": "Trách nhiệm chỉ kiểm soát được khi phạm vi công việc mô tả đủ chi tiết.",
+      "points": [
+        {
+          "label": "Thông tin và đối tượng",
+          "body": "Tên pháp nhân, đại diện, phạm vi tòa nhà và thời hạn cần rõ."
+        },
+        {
+          "label": "Phạm vi dịch vụ",
+          "body": "Tài liệu minh họa hành chính, dịch vụ khách hàng, an ninh, vệ sinh, kỹ thuật."
+        },
+        {
+          "label": "Biên giới trách nhiệm",
+          "body": "Nêu việc thuộc hợp đồng và việc phát sinh cần duyệt riêng."
+        },
+        {
+          "label": "Cách quản trị",
+          "body": "Dùng bảng dịch vụ – đơn vị phụ trách – tần suất – bằng chứng."
+        }
+      ],
+      "example": "Có tranh cãi ai trả phí vệ sinh kính ngoài tòa nhà. Trước hết phải kiểm tra điều khoản phạm vi và phụ lục dịch vụ.",
+      "task": "Viết 4 cột để lập bảng phạm vi công việc của một nhà thầu.",
+      "deep": "Trang 11–14: các điều khoản đầu tiên trong 15 nội dung hợp đồng.",
+      "time": 7
+    },
+    {
+      "id": "m4l3",
+      "module": "m4",
+      "title": "Nhân sự và KPI dịch vụ",
+      "source": "contracts",
+      "pages": "15–16",
+      "why": "Người giám sát cần đo được chất lượng, không chỉ nhìn số lượng người có mặt.",
+      "points": [
+        {
+          "label": "Nhân sự",
+          "body": "Hợp đồng cần xác định số lượng, vai trò, thời gian, năng lực hoặc phương án thay thế."
+        },
+        {
+          "label": "KPI",
+          "body": "Các chỉ số chất lượng cần đo được: độ sạch, tần suất tuần tra, thời gian phản hồi, số lỗi tồn."
+        },
+        {
+          "label": "Bằng chứng",
+          "body": "Nhật ký, hình ảnh, báo cáo và biên bản kiểm tra giúp đánh giá khách quan."
+        },
+        {
+          "label": "Cảnh báo",
+          "body": "Không được tự tạo mức phạt/tiêu chuẩn chưa có trong hợp đồng."
+        }
+      ],
+      "example": "Nhà thầu bảo vệ có đủ người nhưng bỏ sót tuần tra. Hãy đo cả quân số lẫn mức thực hiện nhiệm vụ.",
+      "task": "Hãy đề xuất 2 chỉ số giám sát vệ sinh sảnh với tiêu chí đo cụ thể.",
+      "deep": "Trang 15–16, Điều khoản 4–5.",
+      "time": 7
+    },
+    {
+      "id": "m4l4",
+      "module": "m4",
+      "title": "Giá, thanh toán và trách nhiệm",
+      "source": "contracts",
+      "pages": "17–21",
+      "why": "Thiếu cơ chế thanh toán và trách nhiệm rõ ràng dễ dẫn tới tranh chấp.",
+      "points": [
+        {
+          "label": "Giá dịch vụ",
+          "body": "Nêu giá, cách tính, điều kiện điều chỉnh và các khoản bao gồm/không bao gồm."
+        },
+        {
+          "label": "Thanh toán",
+          "body": "Cần quy định hồ sơ, thời hạn, nghiệm thu và chứng từ."
+        },
+        {
+          "label": "Quyền BQT",
+          "body": "Gắn với quyền giám sát, yêu cầu chất lượng và trách nhiệm quyết định trong phạm vi hợp pháp."
+        },
+        {
+          "label": "PCCC và trách nhiệm",
+          "body": "Không bỏ qua nghĩa vụ phối hợp phòng cháy, ứng phó sự cố hoặc phân định hậu quả."
+        }
+      ],
+      "example": "Nhà thầu gửi hóa đơn khi chưa có biên bản nghiệm thu. Quy trình thanh toán cần xem lại điều kiện hợp đồng.",
+      "task": "Ghi một điều kiện kiểm tra trước khi đề nghị chi tiền cho nhà thầu.",
+      "deep": "Trang 17–21, Điều khoản 6–10.",
+      "time": 8
+    },
+    {
+      "id": "m4l5",
+      "module": "m4",
+      "title": "Nhận diện các điều khoản dễ tranh chấp",
+      "source": "contracts",
+      "pages": "22–25",
+      "why": "Phòng ngừa rủi ro bằng cách đọc hợp đồng có cấu trúc.",
+      "points": [
+        {
+          "label": "Không rõ phạm vi",
+          "body": "Thiếu danh mục công việc khiến hai bên hiểu khác nhau."
+        },
+        {
+          "label": "Không có KPI",
+          "body": "Khó xác định dịch vụ đạt hay không."
+        },
+        {
+          "label": "Thay đổi nhân sự/chi phí",
+          "body": "Nếu thiếu thông báo, chấp thuận và tiêu chí điều chỉnh sẽ dễ mâu thuẫn."
+        },
+        {
+          "label": "Bảo mật và trách nhiệm",
+          "body": "Cần kiểm tra điều khoản PCCC, dữ liệu cư dân, bảo hiểm và bồi thường."
+        }
+      ],
+      "example": "Hợp đồng không ghi người phụ trách khi mất xe tại tầng hầm. Hãy xác định bộ chứng cứ cần xem trước khi kết luận.",
+      "task": "Chọn một hợp đồng giả định và gạch chân ba điều khoản cần làm rõ.",
+      "deep": "Trang 22–25 và tổng kết 10 dấu hiệu rủi ro ở trang 52.",
+      "time": 7
+    },
+    {
+      "id": "m4l6",
+      "module": "m4",
+      "title": "Hợp đồng bảo trì công trình",
+      "source": "contracts",
+      "pages": "26–30",
+      "why": "Bảo trì cần tiêu chí kỹ thuật, lịch và nghiệm thu chặt chẽ hơn một yêu cầu sửa chữa chung.",
+      "points": [
+        {
+          "label": "Nhóm hạng mục",
+          "body": "Phần xây dựng, cơ điện, thiết bị và PCCC."
+        },
+        {
+          "label": "Điều khoản bảo trì",
+          "body": "Phạm vi, vật tư, tiêu chuẩn, tiến độ, bảo hành, an toàn và trách nhiệm."
+        },
+        {
+          "label": "Rủi ro thường gặp",
+          "body": "Thiếu mô tả vật tư, không kiểm tra hiện trường, không làm rõ nghiệm thu hoặc chi phí phát sinh."
+        },
+        {
+          "label": "Giới hạn chuyên môn",
+          "body": "Chỉ kỹ thuật có thẩm quyền xác nhận thông số an toàn; điều phối viên theo dõi hồ sơ/quy trình."
+        }
+      ],
+      "example": "Nhà thầu đề nghị thay vật tư tương đương loại ban đầu. Không tự chấp thuận; cần hồ sơ kỹ thuật, phê duyệt và nghiệm thu đúng thẩm quyền.",
+      "task": "Nêu 3 tài liệu cần có trước khi nghiệm thu một hạng mục bảo trì.",
+      "deep": "Trang 26–30.",
+      "time": 8
+    },
+    {
+      "id": "m4l7",
+      "module": "m4",
+      "title": "Lựa chọn nhà thầu bằng quy trình",
+      "source": "contracts",
+      "pages": "31–33",
+      "why": "Chọn nhà thầu không nên chỉ dựa trên giá rẻ hoặc quen biết.",
+      "points": [
+        {
+          "label": "Xác định nhu cầu",
+          "body": "Viết yêu cầu, phạm vi, tiêu chí chất lượng và ngân sách."
+        },
+        {
+          "label": "Mời và đánh giá",
+          "body": "Đối chiếu năng lực, kinh nghiệm, phương án, nhân sự, giá và rủi ro."
+        },
+        {
+          "label": "Thương thảo và ký",
+          "body": "Lưu hồ sơ đề xuất, biên bản đánh giá, thương thảo, quyết định và hợp đồng."
+        },
+        {
+          "label": "Giám sát sau ký",
+          "body": "Chọn đúng đơn vị mới chỉ là bước đầu; cần nghiệm thu theo KPI."
+        }
+      ],
+      "example": "Hai nhà thầu báo giá bằng nhau nhưng một bên không có kế hoạch thay nhân sự ca đêm. Rủi ro vận hành cần được đưa vào đánh giá.",
+      "task": "Thiết kế bảng 4 tiêu chí so sánh nhà thầu bảo vệ.",
+      "deep": "Trang 31–33 và danh sách BM-01 đến BM-15 ở trang 42–44.",
+      "time": 8
+    },
+    {
+      "id": "m4l8",
+      "module": "m4",
+      "title": "Tranh chấp, chứng cứ và kiểm soát thực hiện",
+      "source": "contracts",
+      "pages": "34–52",
+      "why": "Quy trình có bằng chứng là yếu tố chung của nhiều tình huống tranh chấp.",
+      "points": [
+        {
+          "label": "Tình huống thường gặp",
+          "body": "Cắt giảm bảo vệ, chậm bảo trì, mất xe, lộ dữ liệu, chất lượng vệ sinh không đạt."
+        },
+        {
+          "label": "Chứng cứ",
+          "body": "Hợp đồng, phụ lục, hình ảnh, nhật ký, hóa đơn, báo cáo và biên bản nghiệm thu."
+        },
+        {
+          "label": "Bước xử lý",
+          "body": "Ghi nhận → kiểm tra điều khoản → xác minh chứng cứ → đề nghị khắc phục → nghiệm thu/đánh giá."
+        },
+        {
+          "label": "Chuyển đúng thẩm quyền",
+          "body": "Các phương thức thương lượng, hòa giải, trọng tài, tòa án phụ thuộc điều kiện pháp luật và nội dung hợp đồng."
+        }
+      ],
+      "example": "Mất xe ở tầng hầm: thay vì khẳng định ai chịu trách nhiệm, trước tiên tra hợp đồng, nội quy, vé gửi xe, camera và nhật ký sự cố.",
+      "task": "Soạn mẫu “Phiếu yêu cầu khắc phục” gồm lỗi, bằng chứng, người chịu trách nhiệm và hạn.",
+      "deep": "Trang 34–52, gồm tình huống, chứng cứ và các biểu mẫu.",
+      "time": 10
+    },
+    {
+      "id": "m5l1",
+      "module": "m5",
+      "title": "Tài chính tòa nhà: bức tranh tổng thể",
+      "source": "finance",
+      "pages": "2–4",
+      "why": "Quản lý dòng tiền là một phần của chất lượng dịch vụ và sự bền vững của vận hành.",
+      "points": [
+        {
+          "label": "Mục đích",
+          "body": "Lập kế hoạch thu – chi, theo dõi tài sản, hỗ trợ chủ động nguồn lực và kiểm soát rủi ro."
+        },
+        {
+          "label": "Đối tượng",
+          "body": "Các bên có thể liên quan gồm chủ đầu tư, Ban quản trị, công ty vận hành, Ban quản lý."
+        },
+        {
+          "label": "Khác biệt quan trọng",
+          "body": "Kinh phí vận hành thường kỳ và kinh phí bảo trì không nên nhập làm một."
+        },
+        {
+          "label": "Tính minh bạch",
+          "body": "Dữ liệu phải có nguồn và quy trình xác nhận, không chỉ con số tổng."
+        }
+      ],
+      "example": "Ban quản lý cần giải thích vì sao phí vệ sinh tháng này tăng. Hãy yêu cầu bảng đối chiếu số giờ, đơn giá và khối lượng dịch vụ.",
+      "task": "Liệt kê ba nhóm người cần hiểu báo cáo tài chính tòa nhà.",
+      "deep": "Trang 2–4.",
+      "time": 6
+    },
+    {
+      "id": "m5l2",
+      "module": "m5",
+      "title": "Bộ máy kế toán và phân quyền",
+      "source": "finance",
+      "pages": "5–7",
+      "why": "Người điều phối cần biết ai lập chứng từ, ai duyệt, ai theo dõi.",
+      "points": [
+        {
+          "label": "Cơ cấu BQL",
+          "body": "Tài liệu có sơ đồ Trưởng Ban quản lý, trợ lý/hành chính, kế toán, kỹ thuật, chăm sóc cư dân và giám sát."
+        },
+        {
+          "label": "Phân nhiệm",
+          "body": "Kế toán, thủ quỹ và người phê duyệt có những đầu việc cần tách rõ theo quy định và quy chế nội bộ."
+        },
+        {
+          "label": "Kiểm soát chéo",
+          "body": "Một giao dịch nên có chứng từ, phê duyệt và đối chiếu phù hợp."
+        },
+        {
+          "label": "Tuyến báo cáo",
+          "body": "Khi có chênh lệch phải có đầu mối giải trình và quyết định."
+        }
+      ],
+      "example": "Nhân viên đề nghị tạm ứng mua vật tư. Không chỉ giao tiền; cần quy trình đề nghị, duyệt, quyết toán và lưu chứng từ.",
+      "task": "Vẽ đường đi của một đề nghị mua sắm từ người yêu cầu đến bước thanh toán.",
+      "deep": "Trang 5–7.",
+      "time": 7
+    },
+    {
+      "id": "m5l3",
+      "module": "m5",
+      "title": "Quy trình quỹ, tạm ứng, mua hàng và thu phí",
+      "source": "finance",
+      "pages": "8–11",
+      "why": "Công việc hằng ngày cần chạy theo quy trình để giảm sai sót.",
+      "points": [
+        {
+          "label": "Quỹ tiền mặt",
+          "body": "Thiết lập và kiểm tra sổ quỹ, tiền thực tế và nguyên tắc quản lý."
+        },
+        {
+          "label": "Tạm ứng/hoàn ứng",
+          "body": "Xác định mục đích chi, thời hạn hoàn, chứng từ đi kèm."
+        },
+        {
+          "label": "Mua hàng và kiểm kê",
+          "body": "Có đề nghị, duyệt, nghiệm thu, đối chiếu tài sản/vật tư."
+        },
+        {
+          "label": "Thu phí",
+          "body": "Theo dõi khoản phải thu, tình trạng thanh toán và quy trình xử lý đúng quy định."
+        }
+      ],
+      "example": "Sau khi mua 20 bóng đèn, người mua chỉ gửi ảnh hóa đơn. Cần đối chiếu số lượng thực nhập và biên bản/phiếu nhập theo quy trình.",
+      "task": "Đề xuất 5 cột cho bảng theo dõi tạm ứng và hoàn ứng.",
+      "deep": "Trang 8–11.",
+      "time": 7
+    },
+    {
+      "id": "m5l4",
+      "module": "m5",
+      "title": "Cơ sở lập giá và ngân sách",
+      "source": "finance",
+      "pages": "12–14",
+      "why": "Dự toán tốt phải xuất phát từ phạm vi dịch vụ và phương pháp tính rõ ràng.",
+      "points": [
+        {
+          "label": "Nguồn pháp lý",
+          "body": "Slide dẫn Luật Nhà ở 2023 và Phụ lục VII Nghị định 95/2024 về phương pháp xác định giá."
+        },
+        {
+          "label": "Đơn vị tính",
+          "body": "Giá dịch vụ thường được trình bày theo diện tích và thời gian; cần kiểm tra điều kiện áp dụng."
+        },
+        {
+          "label": "Phạm vi đưa vào giá",
+          "body": "Không tự cộng lẫn khoản bảo trì, trông giữ xe hoặc bảo hiểm khi quy định yêu cầu tách biệt."
+        },
+        {
+          "label": "Tính thận trọng",
+          "body": "Các công thức và điều kiện cụ thể phải tra văn bản hợp nhất trước khi sử dụng chính thức."
+        }
+      ],
+      "example": "Nếu ai đó hỏi “Vì sao phí quản lý là X đồng/m²?”, câu trả lời cần bắt đầu từ phương pháp tính và danh mục dịch vụ.",
+      "task": "Viết ra ba giả định phải công khai khi lập ngân sách.",
+      "deep": "Trang 12–14; pháp luật hiện hành có thể sửa đổi.",
+      "time": 8
+    },
+    {
+      "id": "m5l5",
+      "module": "m5",
+      "title": "Nguồn thu của dự án",
+      "source": "finance",
+      "pages": "15, 21–23",
+      "why": "Không phải khoản tiền nào thu được cũng có cùng mục đích và chủ thể hưởng lợi.",
+      "points": [
+        {
+          "label": "Phí quản lý",
+          "body": "Nguồn thu dịch vụ từ các nhóm người sử dụng có nghĩa vụ theo quy định/hợp đồng."
+        },
+        {
+          "label": "Khai thác chỗ đỗ xe",
+          "body": "Thu theo loại vé hoặc đối tượng nếu có cơ chế phù hợp."
+        },
+        {
+          "label": "Khai thác tài sản chung",
+          "body": "Quảng cáo, vị trí dịch vụ hoặc tiện ích có thể tạo nguồn thu, phải xác định quyền sở hữu/quản lý."
+        },
+        {
+          "label": "Kiểm tra tính hợp lệ",
+          "body": "Phân biệt nguồn thu của đơn vị vận hành với các khoản thuộc chủ thể khác."
+        }
+      ],
+      "example": "Bảng thu có dòng “quảng cáo thang máy”. Trước khi đưa vào ngân sách, cần kiểm tra thỏa thuận và chủ thể có quyền khai thác.",
+      "task": "Phân loại 5 nguồn thu thành định kỳ, phát sinh hoặc cần xác minh quyền hưởng.",
+      "deep": "Trang 15, 21–23.",
+      "time": 7
+    },
+    {
+      "id": "m5l6",
+      "module": "m5",
+      "title": "Các nhóm chi phí vận hành",
+      "source": "finance",
+      "pages": "16–20, 24–27",
+      "why": "Đọc được cấu trúc chi phí giúp nhận ra nguồn gây vượt ngân sách.",
+      "points": [
+        {
+          "label": "Chi phí trực tiếp",
+          "body": "Năng lượng, vật tư, vận hành thiết bị, nhà thầu bảo vệ, vệ sinh và các dịch vụ liên quan."
+        },
+        {
+          "label": "Chi phí quản lý",
+          "body": "Phần chi phí quản lý chung của đơn vị vận hành theo cơ chế tính giá."
+        },
+        {
+          "label": "Lợi nhuận và thuế",
+          "body": "Trong tài liệu được nêu như các thành phần của giá dịch vụ, cần áp dụng đúng quy định hiện hành."
+        },
+        {
+          "label": "Khoản phát sinh",
+          "body": "Vật tư thay thế, sửa chữa và yếu tố bất thường cần dự phòng, ghi nhận nguyên nhân."
+        }
+      ],
+      "example": "Chi điện hệ thống chung tăng 25% so với dự toán. Cần kiểm tra dữ liệu tiêu thụ, sự cố kỹ thuật và vận hành thiết bị trước khi kết luận lãng phí.",
+      "task": "Liệt kê ba khoản chi ổn định và ba khoản dễ biến động trong tòa nhà.",
+      "deep": "Trang 16–20, 24–27.",
+      "time": 8
+    },
+    {
+      "id": "m5l7",
+      "module": "m5",
+      "title": "Cân đối thu – chi và ngân sách cuối cùng",
+      "source": "finance",
+      "pages": "21, 28–30",
+      "why": "Đây là bước biến dự toán thành công cụ ra quyết định.",
+      "points": [
+        {
+          "label": "Ước tính doanh thu",
+          "body": "Từ các khoản thu đã có căn cứ, tránh tính hai lần."
+        },
+        {
+          "label": "Phân tích chi",
+          "body": "Chia nhóm chi thường kỳ và phát sinh, kiểm tra giả định."
+        },
+        {
+          "label": "Phân bổ",
+          "body": "Xác định nhóm đối tượng và phương pháp phân bổ theo quy định/hợp đồng."
+        },
+        {
+          "label": "Kiểm tra và hiệu chỉnh",
+          "body": "So sánh thu – chi, tìm nguyên nhân chênh lệch, báo cáo đề xuất."
+        }
+      ],
+      "example": "Dự toán thu 400 triệu, chi 430 triệu mỗi tháng (số liệu giả định). Không tăng phí ngay: trước tiên kiểm tra giả định, khoản chi bất thường và nguồn dự phòng.",
+      "task": "Hãy tự lập bảng 3 cột: khoản thu – khoản chi – giải thích chênh lệch.",
+      "deep": "Trang 21, 28–30.",
+      "time": 8
+    },
+    {
+      "id": "m6l1",
+      "module": "m6",
+      "title": "Dự án mô phỏng: Tòa nhà Ánh Dương",
+      "source": null,
+      "pages": "",
+      "why": "Bạn vừa gia nhập nhóm vận hành tòa nhà giả định 18 tầng, đang chuẩn bị tiếp nhận bàn giao.",
+      "points": [
+        {
+          "label": "Bối cảnh",
+          "body": "Dự án giả định có 240 căn hộ, 2 thang máy, bãi xe và các nhà thầu bảo vệ, vệ sinh."
+        },
+        {
+          "label": "Nhiệm vụ 1",
+          "body": "Nhận diện ai cần tham gia việc bàn giao và phê duyệt."
+        },
+        {
+          "label": "Nhiệm vụ 2",
+          "body": "Tìm những loại hồ sơ và chứng từ nên kiểm tra."
+        },
+        {
+          "label": "Nhiệm vụ 3",
+          "body": "Sắp xếp ưu tiên vận hành, nhà thầu, tài chính và truyền thông cư dân."
+        },
+        {
+          "label": "Nguyên tắc",
+          "body": "Bạn không phải chuyên gia kỹ thuật hay luật sư; hãy ghi rõ phần cần chuyển người có chuyên môn xác minh."
+        }
+      ],
+      "example": "Tình huống giả định: còn thiếu hướng dẫn vận hành hệ thống bơm, hợp đồng vệ sinh chỉ ghi “thực hiện định kỳ”, dự toán chi đang lớn hơn thu. Người học cần không ký nhận “đầy đủ”, yêu cầu làm rõ KPI và kiểm tra giả định ngân sách.",
+      "task": "Hoàn thành 5 bước của bài thực hành tích hợp tại Trung tâm luyện tập, sau đó tự đánh giá quyết định của mình.",
+      "deep": "Toàn bộ số liệu, tên dự án và tình huống là mô phỏng học tập.",
+      "time": 10
+    }
+  ],
+  "questions": {
+    "m1": [
+      {
+        "id": "m1q1",
+        "lesson": "m1l1",
+        "q": "Cơ sở đáng tin nhất để xác định một diện tích là chung hay riêng là gì?",
+        "opts": [
+          "Ý kiến của một cư dân",
+          "Hợp đồng và hồ sơ pháp lý, bản vẽ liên quan",
+          "Cách khu vực đang được sử dụng",
+          "Lời giới thiệu của môi giới"
+        ],
+        "answer": 1,
+        "why": "Không suy đoán quyền sở hữu từ vị trí hoặc lời nói; cần đối chiếu hồ sơ và quy định (luật tr.5–6)."
+      },
+      {
+        "id": "m1q2",
+        "lesson": "m1l2",
+        "q": "Khi có tranh cãi về quyền sử dụng chỗ đỗ xe, bước đầu nên làm gì?",
+        "opts": [
+          "Tự phân lại chỗ đỗ",
+          "Ghi nhận vấn đề và kiểm tra hồ sơ, nội quy",
+          "Cho người đến trước quyết định",
+          "Ngừng toàn bộ hoạt động bãi xe"
+        ],
+        "answer": 1,
+        "why": "Slide về chỗ để xe nhấn mạnh việc xác định đúng căn cứ sở hữu/quản lý (tr.7–9)."
+      },
+      {
+        "id": "m1q3",
+        "lesson": "m1l3",
+        "q": "Hội nghị nhà chung cư có vai trò nào?",
+        "opts": [
+          "Tự sửa thang máy",
+          "Thông qua các vấn đề thuộc thẩm quyền quản lý sử dụng",
+          "Thu phí trực tiếp mọi ngày",
+          "Đứng mọi ca bảo vệ"
+        ],
+        "answer": 1,
+        "why": "Hội nghị gắn với cơ chế quyết định, không phải bộ phận vận hành hiện trường (tr.11–13)."
+      },
+      {
+        "id": "m1q4",
+        "lesson": "m1l4",
+        "q": "Ban quản trị và Ban quản lý tòa nhà là một tổ chức duy nhất?",
+        "opts": [
+          "Đúng",
+          "Sai"
+        ],
+        "answer": 1,
+        "why": "Hai vai trò có cơ chế, thẩm quyền và hoạt động khác nhau (tr.14–17)."
+      },
+      {
+        "id": "m1q5",
+        "lesson": "m1l5",
+        "q": "Khi đề xuất bảo trì, bằng chứng nào hữu ích?",
+        "opts": [
+          "Tin nhắn không ghi thời gian",
+          "Kế hoạch, biên bản, nghiệm thu và chứng từ",
+          "Chỉ lời kể",
+          "Chỉ ảnh quảng cáo"
+        ],
+        "answer": 1,
+        "why": "Hồ sơ hỗ trợ giám sát, nghiệm thu và giải trình (tr.18–28, 52–55)."
+      },
+      {
+        "id": "m1q6",
+        "lesson": "m1l6",
+        "q": "Chứng nhận bồi dưỡng QLVH có tự thay thế bằng chuyên môn kỹ thuật không?",
+        "opts": [
+          "Có",
+          "Không"
+        ],
+        "answer": 1,
+        "why": "Chứng nhận nghiệp vụ khác với trình độ và năng lực kỹ thuật chuyên môn (tr.29–33)."
+      },
+      {
+        "id": "m1q7",
+        "lesson": "m1l7",
+        "q": "Khoản nào cần phân biệt với phí quản lý vận hành?",
+        "opts": [
+          "Kinh phí bảo trì",
+          "Lịch trực bảo vệ",
+          "Biên bản họp",
+          "Nhật ký bảo trì"
+        ],
+        "answer": 0,
+        "why": "Hai nguồn kinh phí có mục đích và chế độ quản lý khác nhau (tr.34–36)."
+      },
+      {
+        "id": "m1q8",
+        "lesson": "m1l8",
+        "q": "Cư dân báo cửa thoát hiểm bị chặn. Ưu tiên thích hợp là gì?",
+        "opts": [
+          "Đợi cuộc họp tháng sau",
+          "Ghi nhận, xử lý nguy cơ an toàn và báo đúng đầu mối",
+          "Xóa thông tin phản ánh",
+          "Tự khẳng định không nguy hiểm"
+        ],
+        "answer": 1,
+        "why": "Nguy cơ an toàn cần phản hồi, chuyển xử lý đúng quy trình (tr.51–58)."
+      },
+      {
+        "id": "m1q9",
+        "lesson": "m1l5",
+        "q": "Chọn các chứng cứ hữu ích khi có tranh chấp:",
+        "opts": [
+          "Hợp đồng",
+          "Biên bản họp",
+          "Nhật ký, hình ảnh có thời gian",
+          "Dự đoán không căn cứ"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ],
+        "why": "Cần lưu hồ sơ khách quan và có thể kiểm tra, không dựa vào phỏng đoán."
+      },
+      {
+        "id": "m1q10",
+        "lesson": "m1l8",
+        "q": "Vì sao cần kiểm tra hiệu lực văn bản khi học từ slide?",
+        "opts": [
+          "Quy định có thể đã sửa đổi",
+          "Slide luôn sai",
+          "Không cần kiểm tra vì có chứng nhận",
+          "Để bỏ qua nội dung"
+        ],
+        "answer": 0,
+        "why": "Luật Nhà ở 2023 có ghi nhận hết hiệu lực một phần; cần tra văn bản chính thức trước áp dụng."
+      }
+    ],
+    "m2": [
+      {
+        "id": "m2q1",
+        "lesson": "m2l1",
+        "q": "Vì sao kiểm kê hồ sơ khi bàn giao?",
+        "opts": [
+          "Chỉ để đủ số tập giấy",
+          "Để xác định đủ/thiếu và tình trạng tài liệu",
+          "Để bỏ các bản vẽ",
+          "Để tránh lập biên bản"
+        ],
+        "answer": 1,
+        "why": "Hồ sơ cần gắn với danh mục kiểm tra và hiện trạng thực tế (tr.6–13)."
+      },
+      {
+        "id": "m2q2",
+        "lesson": "m2l2",
+        "q": "Khi danh mục có máy bơm nhưng thực tế chưa kiểm thấy, làm gì?",
+        "opts": [
+          "Ký nhận đủ",
+          "Ghi ngoại lệ và yêu cầu kiểm tra",
+          "Xóa mục máy bơm",
+          "Đoán đang ở kho"
+        ],
+        "answer": 1,
+        "why": "Bàn giao phải phản ánh hiện trạng, không giả định (tr.11–13)."
+      },
+      {
+        "id": "m2q3",
+        "lesson": "m2l3",
+        "q": "Trường thông tin nào cần có khi quản lý một tài liệu pháp lý?",
+        "opts": [
+          "Tên, số hiệu, ngày, tình trạng",
+          "Màu bìa duy nhất",
+          "Người in gần nhất",
+          "Số chữ trên trang"
+        ],
+        "answer": 0,
+        "why": "Mã hiệu và tình trạng giúp truy vết tài liệu (tr.16–20)."
+      },
+      {
+        "id": "m2q4",
+        "lesson": "m2l4",
+        "q": "Bản vẽ hoàn công nhằm giúp đối chiếu điều gì?",
+        "opts": [
+          "Chỉ quảng cáo dự án",
+          "Tình trạng công trình đã hoàn thành theo hồ sơ",
+          "Mức thu nhập cư dân",
+          "Lịch lễ tân"
+        ],
+        "answer": 1,
+        "why": "Bản vẽ hoàn công là nhóm hồ sơ then chốt khi bàn giao (tr.44–47)."
+      },
+      {
+        "id": "m2q5",
+        "lesson": "m2l4",
+        "q": "Chọn những hồ sơ có thể liên quan tới thiết bị kỹ thuật:",
+        "opts": [
+          "Hướng dẫn vận hành",
+          "Thông số kỹ thuật",
+          "Thời hạn bảo hành",
+          "Tờ rơi bán hàng không rõ nguồn"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ],
+        "why": "Tiếp nhận hệ thống kỹ thuật phải có hướng dẫn, thông số và bảo hành (tr.20–25)."
+      },
+      {
+        "id": "m2q6",
+        "lesson": "m2l5",
+        "q": "Thiếu biên bản nghiệm thu hệ thống xử lý nước thải, nên?",
+        "opts": [
+          "Đánh dấu đủ",
+          "Ghi thiếu và yêu cầu bổ sung/xác minh",
+          "Tự lập biên bản mới",
+          "Đưa vào thùng rác"
+        ],
+        "answer": 1,
+        "why": "Nghiệm thu và môi trường là nhóm hồ sơ riêng (tr.25–30)."
+      },
+      {
+        "id": "m2q7",
+        "lesson": "m2l6",
+        "q": "Kinh phí bảo trì và phí vận hành là cùng một khoản?",
+        "opts": [
+          "Đúng",
+          "Sai"
+        ],
+        "answer": 1,
+        "why": "Hai khoản có mục đích và cơ chế khác nhau (tr.31–43)."
+      },
+      {
+        "id": "m2q8",
+        "lesson": "m2l7",
+        "q": "Điều gì quan trọng khi kiểm soát phiên bản bản vẽ?",
+        "opts": [
+          "Luôn dùng bản cũ nhất",
+          "Đối chiếu bản được bàn giao cuối cùng và mã hiệu",
+          "Đổi tên tùy ý",
+          "Không cần danh mục"
+        ],
+        "answer": 1,
+        "why": "Phiên bản liên quan độ tin cậy khi vận hành (tr.44–47)."
+      },
+      {
+        "id": "m2q9",
+        "lesson": "m2l2",
+        "q": "Trước khi ký bàn giao hồ sơ, cần có gì?",
+        "opts": [
+          "Biên bản và danh mục, ghi rõ ngoại lệ",
+          "Chỉ lời hứa",
+          "Chỉ chụp ảnh bìa",
+          "Không cần chữ ký"
+        ],
+        "answer": 0,
+        "why": "Biên bản bàn giao ghi nhận trách nhiệm và tình trạng (tr.9–13)."
+      },
+      {
+        "id": "m2q10",
+        "lesson": "m2l6",
+        "q": "Khi số dư quỹ bảo trì không khớp sổ, phản ứng nào đúng?",
+        "opts": [
+          "Tự sửa số dư",
+          "Đối chiếu chứng từ, lập chênh lệch và báo đúng người",
+          "Bỏ qua",
+          "Sử dụng quỹ bù khoản khác"
+        ],
+        "answer": 1,
+        "why": "Chênh lệch cần làm rõ theo bằng chứng (tr.31–43)."
+      }
+    ],
+    "m3": [
+      {
+        "id": "m3q1",
+        "lesson": "m3l1",
+        "q": "Pre-opening diễn ra khi nào?",
+        "opts": [
+          "Sau khi đã vận hành nhiều năm",
+          "Trước khi dự án hoạt động chính thức",
+          "Chỉ khi thanh lý hợp đồng",
+          "Chỉ ngày trả lương"
+        ],
+        "answer": 1,
+        "why": "Đây là giai đoạn chuẩn bị cho vận hành (tr.2–6)."
+      },
+      {
+        "id": "m3q2",
+        "lesson": "m3l2",
+        "q": "Tài liệu có nhóm bộ phận nào trong BQL?",
+        "opts": [
+          "Kỹ thuật, kế toán, dịch vụ, giám sát",
+          "Chỉ kế toán",
+          "Chỉ ban marketing",
+          "Chỉ nhà thầu"
+        ],
+        "answer": 0,
+        "why": "Sơ đồ trang 8 thể hiện nhiều nhóm phối hợp."
+      },
+      {
+        "id": "m3q3",
+        "lesson": "m3l3",
+        "q": "Khoản nào phù hợp ngân sách pre-opening?",
+        "opts": [
+          "Chuẩn bị văn phòng Ban quản lý",
+          "Quà sinh nhật cá nhân không liên quan",
+          "Chi phí kỳ nghỉ của nhà thầu",
+          "Không khoản nào"
+        ],
+        "answer": 0,
+        "why": "Chi phí văn phòng, nhân sự, công cụ ban đầu được nêu ở trang 9–12."
+      },
+      {
+        "id": "m3q4",
+        "lesson": "m3l4",
+        "q": "Trước khi đón cư dân, tài liệu nào cần sẵn có?",
+        "opts": [
+          "Sổ tay cư dân, liên hệ khẩn cấp, nội quy",
+          "Chỉ banner quảng cáo",
+          "Không cần tài liệu",
+          "Báo cáo doanh thu năm sau"
+        ],
+        "answer": 0,
+        "why": "Trang 15–16 nêu sổ tay và tài liệu cho vận hành."
+      },
+      {
+        "id": "m3q5",
+        "lesson": "m3l5",
+        "q": "Chọn các bước hợp lý khi nhận tài sản:",
+        "opts": [
+          "Lập danh mục",
+          "Kiểm đếm tình trạng",
+          "Đối chiếu hồ sơ và bảo hành",
+          "Ký đủ trước khi kiểm"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ],
+        "why": "Nhận tài sản/hệ thống phải lập danh mục, xác minh tình trạng (tr.17–18)."
+      },
+      {
+        "id": "m3q6",
+        "lesson": "m3l6",
+        "q": "Giám sát vệ sinh nên đánh giá điều gì?",
+        "opts": [
+          "Chỉ số người có mặt",
+          "Chất lượng, tần suất và bằng chứng thực hiện",
+          "Tên công ty in trên áo",
+          "Số quảng cáo"
+        ],
+        "answer": 1,
+        "why": "Quản lý dịch vụ gắn với tiêu chuẩn, kiểm soát vật tư và chất lượng (tr.27–28)."
+      },
+      {
+        "id": "m3q7",
+        "lesson": "m3l6",
+        "q": "Cư dân phản ánh sự cố. Bước đầu đúng nhất?",
+        "opts": [
+          "Ghi nhận và phân loại để chuyển xử lý",
+          "Hứa ngay sẽ hoàn tất trong 1 phút",
+          "Xóa phản ánh",
+          "Yêu cầu cư dân tự sửa"
+        ],
+        "answer": 0,
+        "why": "Cần tiếp nhận rồi phối hợp, phản hồi theo quy trình (tr.29)."
+      },
+      {
+        "id": "m3q8",
+        "lesson": "m3l7",
+        "q": "Báo cáo vận hành nên có nội dung nào?",
+        "opts": [
+          "Việc triển khai, rủi ro, thu chi, kiến nghị",
+          "Chỉ lời chào",
+          "Chỉ danh sách nhân viên nghỉ",
+          "Chỉ tổng lượt xe"
+        ],
+        "answer": 0,
+        "why": "Trang 33 trình bày thông tin tuần/tháng, công nợ, kiến nghị."
+      },
+      {
+        "id": "m3q9",
+        "lesson": "m3l7",
+        "q": "Định mức vật tư có ích vì?",
+        "opts": [
+          "Cho phép so sánh dùng thực tế với ngân sách",
+          "Để bỏ việc kiểm kê",
+          "Để tăng giá bất kỳ",
+          "Để cấm mọi tiêu hao"
+        ],
+        "answer": 0,
+        "why": "Tài liệu yêu cầu kiểm soát nhập–xuất–tồn và so sánh định mức (tr.30)."
+      },
+      {
+        "id": "m3q10",
+        "lesson": "m3l7",
+        "q": "Rủi ro vận hành được quản lý tốt bằng cách nào?",
+        "opts": [
+          "Đánh giá, quy trình phòng ngừa và phương án ứng phó",
+          "Chờ sự cố nặng mới xử",
+          "Chỉ đổi tên rủi ro",
+          "Không ghi chép"
+        ],
+        "answer": 0,
+        "why": "Quản lý rủi ro là đánh giá – kiểm soát – ứng phó (tr.32)."
+      }
+    ],
+    "m4": [
+      {
+        "id": "m4q1",
+        "lesson": "m4l1",
+        "q": "Hợp đồng giúp những việc nào?",
+        "opts": [
+          "Giao việc, kiểm soát, thanh toán, trách nhiệm",
+          "Chỉ đặt logo",
+          "Chỉ giới thiệu doanh nghiệp",
+          "Không có tác dụng vận hành"
+        ],
+        "answer": 0,
+        "why": "Tài liệu trang 5 giải thích vai trò hợp đồng."
+      },
+      {
+        "id": "m4q2",
+        "lesson": "m4l1",
+        "q": "Hợp đồng bảo trì thang máy thuộc nhóm nào?",
+        "opts": [
+          "Quản lý tài sản riêng",
+          "Hợp đồng bảo trì",
+          "Hợp đồng khai thác quảng cáo",
+          "Biên bản Hội nghị"
+        ],
+        "answer": 1,
+        "why": "Tài liệu chia 4 nhóm hợp đồng, trang 6."
+      },
+      {
+        "id": "m4q3",
+        "lesson": "m4l2",
+        "q": "Phạm vi công việc rõ nhất khi mô tả điều gì?",
+        "opts": [
+          "Việc, trách nhiệm, tần suất, bằng chứng",
+          "Chỉ khẩu hiệu “tận tâm”",
+          "Màu giấy",
+          "Logo nhà thầu"
+        ],
+        "answer": 0,
+        "why": "Phạm vi phải có thể kiểm soát và nghiệm thu (tr.11–14)."
+      },
+      {
+        "id": "m4q4",
+        "lesson": "m4l3",
+        "q": "Một KPI vệ sinh tốt nên có đặc điểm nào?",
+        "opts": [
+          "Đo được và kiểm tra được",
+          "Hoàn toàn cảm tính",
+          "Không có thời gian",
+          "Không cần tiêu chí"
+        ],
+        "answer": 0,
+        "why": "KPI cần đo lường chất lượng dịch vụ (tr.15–16)."
+      },
+      {
+        "id": "m4q5",
+        "lesson": "m4l4",
+        "q": "Trước thanh toán nhà thầu, hồ sơ nào thường quan trọng?",
+        "opts": [
+          "Nghiệm thu và chứng từ theo hợp đồng",
+          "Chỉ email quảng cáo",
+          "Ảnh văn phòng nhà thầu",
+          "Không cần gì"
+        ],
+        "answer": 0,
+        "why": "Giá, thời hạn và chứng từ thanh toán phải quy định rõ (tr.17–21)."
+      },
+      {
+        "id": "m4q6",
+        "lesson": "m4l5",
+        "q": "Điều khoản nào báo hiệu rủi ro?",
+        "opts": [
+          "Không có KPI và tiêu chuẩn",
+          "Phạm vi rõ ràng",
+          "Có biên bản nghiệm thu",
+          "Có cách xác minh"
+        ],
+        "answer": 0,
+        "why": "Trang 22–25 và 52 liệt kê dấu hiệu rủi ro."
+      },
+      {
+        "id": "m4q7",
+        "lesson": "m4l6",
+        "q": "Khi muốn thay vật tư bảo trì khác loại, cần?",
+        "opts": [
+          "Tự thay ngay",
+          "Đối chiếu yêu cầu kỹ thuật và quy trình phê duyệt",
+          "Chỉ nghe cam kết miệng",
+          "Không cần nghiệm thu"
+        ],
+        "answer": 1,
+        "why": "Vật tư ảnh hưởng chất lượng và trách nhiệm bảo trì (tr.28–30)."
+      },
+      {
+        "id": "m4q8",
+        "lesson": "m4l7",
+        "q": "Chọn các tiêu chí lựa chọn nhà thầu:",
+        "opts": [
+          "Năng lực thực hiện",
+          "Giá và phương án",
+          "Kế hoạch nhân sự",
+          "Quan hệ thân quen là đủ"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ],
+        "why": "Việc lựa chọn cần quy trình và đánh giá đa tiêu chí (tr.31–33)."
+      },
+      {
+        "id": "m4q9",
+        "lesson": "m4l8",
+        "q": "Khi mất xe, trước khi kết luận trách nhiệm cần kiểm tra?",
+        "opts": [
+          "Hợp đồng, vé xe, nội quy, camera",
+          "Chỉ suy đoán",
+          "Bỏ nhật ký sự cố",
+          "Chỉ số tầng"
+        ],
+        "answer": 0,
+        "why": "Tình huống điển hình ở trang 46."
+      },
+      {
+        "id": "m4q10",
+        "lesson": "m4l8",
+        "q": "Chứng cứ nào phù hợp để giải quyết tranh chấp hợp đồng?",
+        "opts": [
+          "Hợp đồng, phụ lục, nhật ký, biên bản",
+          "Tin đồn",
+          "Không có hồ sơ",
+          "Đánh giá cảm tính"
+        ],
+        "answer": 0,
+        "why": "Trang 41 xác định chứng cứ pháp lý, kỹ thuật, tài chính."
+      }
+    ],
+    "m5": [
+      {
+        "id": "m5q1",
+        "lesson": "m5l1",
+        "q": "Tại sao phải quản lý tài chính tòa nhà?",
+        "opts": [
+          "Chủ động nguồn lực, theo dõi thu chi và tài sản",
+          "Chỉ để vẽ biểu đồ",
+          "Để không cần lưu hồ sơ",
+          "Để thay vai trò kỹ thuật"
+        ],
+        "answer": 0,
+        "why": "Tài liệu trang 2–4 về mục đích quản lý tài chính."
+      },
+      {
+        "id": "m5q2",
+        "lesson": "m5l2",
+        "q": "Bộ phận nào có trong sơ đồ Ban quản lý?",
+        "opts": [
+          "Kế toán–thủ quỹ",
+          "Chỉ phòng quảng cáo",
+          "Chỉ giám đốc công ty khác",
+          "Không có bộ phận tài chính"
+        ],
+        "answer": 0,
+        "why": "Sơ đồ tr.6–7 có kế toán/thủ quỹ."
+      },
+      {
+        "id": "m5q3",
+        "lesson": "m5l3",
+        "q": "Tạm ứng nên đi cùng điều gì?",
+        "opts": [
+          "Mục đích, phê duyệt, chứng từ hoàn ứng",
+          "Chỉ lời hứa",
+          "Không thời hạn",
+          "Không theo dõi"
+        ],
+        "answer": 0,
+        "why": "Quy trình tr.8–9 cần kiểm soát khoản chi."
+      },
+      {
+        "id": "m5q4",
+        "lesson": "m5l4",
+        "q": "Trước khi tính giá vận hành, phải xác định?",
+        "opts": [
+          "Phạm vi dịch vụ và phương pháp tính",
+          "Màu logo",
+          "Ngày nghỉ phép nhân viên",
+          "Tên người thiết kế poster"
+        ],
+        "answer": 0,
+        "why": "Slide tr.12–14 trình bày cơ sở lập giá."
+      },
+      {
+        "id": "m5q5",
+        "lesson": "m5l5",
+        "q": "Chọn các nguồn thu có thể xuất hiện trong một dự án:",
+        "opts": [
+          "Phí dịch vụ",
+          "Thu bãi xe",
+          "Khai thác quảng cáo hợp lệ",
+          "Tiền cư dân chuyển khoản nhầm mặc định là doanh thu"
+        ],
+        "answer": [
+          0,
+          1,
+          2
+        ],
+        "why": "Nguồn thu cần có quyền và căn cứ ghi nhận (tr.15, 22–23)."
+      },
+      {
+        "id": "m5q6",
+        "lesson": "m5l6",
+        "q": "Khoản nào là chi phí trực tiếp điển hình?",
+        "opts": [
+          "Điện hệ thống chung và vệ sinh",
+          "Tiền mua căn hộ cá nhân",
+          "Kỳ nghỉ riêng",
+          "Tiền mừng cưới không liên quan"
+        ],
+        "answer": 0,
+        "why": "Chi phí trực tiếp mô tả ở tr.16–17."
+      },
+      {
+        "id": "m5q7",
+        "lesson": "m5l6",
+        "q": "Khi chi phí vượt dự toán, nên làm gì đầu tiên?",
+        "opts": [
+          "Kiểm tra dữ liệu, nguyên nhân và chứng từ",
+          "Xóa dòng chi phí",
+          "Tự tăng phí ngay",
+          "Không cần báo cáo"
+        ],
+        "answer": 0,
+        "why": "Cần kiểm soát và phân tích chi phí (tr.24–27)."
+      },
+      {
+        "id": "m5q8",
+        "lesson": "m5l7",
+        "q": "Các bước xây ngân sách có thứ tự nào hợp lý?",
+        "opts": [
+          "Ước thu – phân tích chi – dự phòng – cân đối – kiểm tra",
+          "Cân đối trước rồi bịa số",
+          "Bỏ dự phòng và chứng từ",
+          "Chỉ lập doanh thu"
+        ],
+        "answer": 0,
+        "why": "Trang 21 mô tả chuỗi bước ngân sách."
+      },
+      {
+        "id": "m5q9",
+        "lesson": "m5l7",
+        "q": "Thu dự toán 400 triệu, chi 430 triệu: chênh lệch là?",
+        "opts": [
+          "Thiếu 30 triệu",
+          "Thừa 30 triệu",
+          "Cân bằng",
+          "Không tính được"
+        ],
+        "answer": 0,
+        "why": "Bài toán giả định: 400 – 430 = –30 triệu; cần xem nguyên nhân trước điều chỉnh."
+      },
+      {
+        "id": "m5q10",
+        "lesson": "m5l7",
+        "q": "Phí vận hành và quỹ bảo trì có thể tùy ý gộp để bù thiếu ngân sách?",
+        "opts": [
+          "Có",
+          "Không"
+        ],
+        "answer": 1,
+        "why": "Hai khoản có mục đích, cơ chế pháp lý khác nhau (tr.13, tr.31–43 tài liệu hồ sơ)."
+      }
+    ],
+    "m0": [
+      {
+        "id": "m0q1",
+        "lesson": "m0l1",
+        "q": "Vai trò cốt lõi của điều phối vận hành là gì?",
+        "opts": [
+          "Tự làm toàn bộ việc kỹ thuật",
+          "Ghi nhận, phân công, kiểm tra và phản hồi",
+          "Không cần theo dõi kết quả",
+          "Chỉ thu phí"
+        ],
+        "answer": 1,
+        "why": "Điều phối là bảo đảm thông tin và trách nhiệm đi đúng tuyến."
+      },
+      {
+        "id": "m0q2",
+        "lesson": "m0l2",
+        "q": "Ban quản trị và Ban quản lý có khác nhau không?",
+        "opts": [
+          "Có",
+          "Không"
+        ],
+        "answer": 0,
+        "why": "Vai trò đại diện/quản trị khác với nhóm triển khai dịch vụ."
+      },
+      {
+        "id": "m0q3",
+        "lesson": "m0l3",
+        "q": "Học xong một bài nhưng chưa trả lời được câu hỏi nên?",
+        "opts": [
+          "Ôn điểm chưa hiểu và thử lại",
+          "Đánh dấu đã giỏi ngay",
+          "Bỏ cả module",
+          "Chỉ đọc tiêu đề"
+        ],
+        "answer": 0,
+        "why": "Retrieval practice giúp nhận diện chỗ chưa chắc."
+      },
+      {
+        "id": "m0q4",
+        "lesson": "m0l3",
+        "q": "Website tự học này có cấp chứng nhận nghề nghiệp chính thức?",
+        "opts": [
+          "Có",
+          "Không"
+        ],
+        "answer": 1,
+        "why": "Ứng dụng là nguồn tự học bổ trợ, không thay thế khóa bồi dưỡng có cấp chứng nhận."
+      }
+    ]
+  },
+  "scenarios": {
+    "m1": [
+      {
+        "title": "Hành lang có phải sở hữu riêng?",
+        "context": "Một cư dân nói đoạn hành lang ngay trước cửa nhà mình là “của riêng” nên được đặt tủ.",
+        "choices": [
+          "Đồng ý vì ở sát cửa căn hộ",
+          "Ghi nhận yêu cầu, đối chiếu hồ sơ sở hữu và nội quy"
+        ],
+        "answer": 1,
+        "feedback": "Vị trí không tự xác lập quyền sở hữu. Cần hồ sơ, quy định (Luật tr.5–6)."
+      },
+      {
+        "title": "Đổi nhà thầu bảo vệ",
+        "context": "Một cư dân đề nghị bạn ngay lập tức thay công ty bảo vệ.",
+        "choices": [
+          "Tự ký hợp đồng mới",
+          "Báo cáo đúng đầu mối, kiểm tra hợp đồng và quy trình ra quyết định"
+        ],
+        "answer": 1,
+        "feedback": "Cần làm theo thẩm quyền và hợp đồng (Luật tr.14–28)."
+      }
+    ],
+    "m2": [
+      {
+        "title": "Thiếu sổ bảo trì",
+        "context": "Hồ sơ thang máy thiếu sổ bảo trì và hướng dẫn của thiết bị.",
+        "choices": [
+          "Lập ngoại lệ và yêu cầu bổ sung",
+          "Ghi đã nhận đủ"
+        ],
+        "answer": 0,
+        "feedback": "Không thể coi đã tiếp nhận đủ hồ sơ kỹ thuật khi tài liệu quan trọng còn thiếu."
+      },
+      {
+        "title": "Chênh lệch quỹ bảo trì",
+        "context": "Biên bản nói số dư A, sao kê lại cho số dư B.",
+        "choices": [
+          "Tự điều chỉnh biên bản",
+          "Lập bảng chênh lệch, đề nghị đối chiếu chính thức"
+        ],
+        "answer": 1,
+        "feedback": "Phải lưu chứng cứ tài chính và đối chiếu số liệu (Hồ sơ tr.31–43)."
+      }
+    ],
+    "m3": [
+      {
+        "title": "Pre-opening thiếu phương án bãi xe",
+        "context": "Tòa nhà sắp nhận cư dân nhưng chưa có quy trình thẻ xe và phân luồng.",
+        "choices": [
+          "Chờ khi có phàn nàn",
+          "Đưa thành rủi ro ưu tiên và phân công hoàn tất trước mở cửa"
+        ],
+        "answer": 1,
+        "feedback": "Trang 22–23 đề cập chuẩn bị bãi xe, cổng vào, thẻ cư dân."
+      },
+      {
+        "title": "Phàn nàn vệ sinh lặp lại",
+        "context": "Ba ngày liên tiếp có phản ánh về vệ sinh tầng hầm.",
+        "choices": [
+          "Đánh giá KPI, nhật ký và yêu cầu khắc phục có deadline",
+          "Chỉ nhắn “đã tiếp nhận” rồi thôi"
+        ],
+        "answer": 0,
+        "feedback": "Giám sát phải kiểm tra bằng chứng và theo dõi kết quả (Dự án tr.27–28)."
+      }
+    ],
+    "m4": [
+      {
+        "title": "Nhà thầu cắt giảm nhân sự",
+        "context": "Số bảo vệ ca đêm thấp hơn thỏa thuận.",
+        "choices": [
+          "Ghi nhận chứng cứ và đối chiếu điều khoản nhân sự/KPI",
+          "Chờ cuối năm mới xem"
+        ],
+        "answer": 0,
+        "feedback": "Hợp đồng cần phân rõ nhân sự và KPI (tr.15–16, 35)."
+      },
+      {
+        "title": "Bảo trì phát sinh vật tư",
+        "context": "Nhà thầu muốn thay vật tư khác thông số trong hợp đồng.",
+        "choices": [
+          "Chấp thuận qua điện thoại",
+          "Yêu cầu hồ sơ kỹ thuật và quy trình phê duyệt"
+        ],
+        "answer": 1,
+        "feedback": "Hợp đồng bảo trì phải kiểm soát vật tư và nghiệm thu (tr.26–30)."
+      }
+    ],
+    "m5": [
+      {
+        "title": "Giá dịch vụ bị phản ánh",
+        "context": "Cư dân yêu cầu giải thích một khoản thu.",
+        "choices": [
+          "Gửi bảng cấu phần thu/chi và căn cứ phù hợp",
+          "Trả lời “đã quy định vậy”"
+        ],
+        "answer": 0,
+        "feedback": "Minh bạch và căn cứ tính giá giúp giảm tranh chấp (Tài chính tr.12–16)."
+      },
+      {
+        "title": "Vượt dự toán tiền điện",
+        "context": "Chi phí điện chung tăng cao so với tháng trước.",
+        "choices": [
+          "Xóa chênh lệch để báo cáo đẹp",
+          "Đối chiếu công tơ, vận hành, sự cố và lập giải trình"
+        ],
+        "answer": 1,
+        "feedback": "Phân tích nguyên nhân là bước quan trọng của quản lý ngân sách (tr.24–30)."
+      }
+    ]
+  },
+  "glossary": [
+    {
+      "term": "Ban quản trị (BQT)",
+      "meaning": "Nhóm được hình thành theo cơ chế quản lý nhà chung cư để thực hiện nhiệm vụ theo thẩm quyền.",
+      "source": "law",
+      "pages": "14–28"
+    },
+    {
+      "term": "Ban quản lý tòa nhà (BQLTN)",
+      "meaning": "Bộ phận triển khai công việc vận hành tại dự án, thường do doanh nghiệp vận hành tổ chức.",
+      "source": "finance",
+      "pages": "5–7"
+    },
+    {
+      "term": "Chủ đầu tư (CĐT)",
+      "meaning": "Chủ thể đầu tư dự án với trách nhiệm liên quan phát triển và bàn giao theo pháp luật.",
+      "source": "handover",
+      "pages": "6–13"
+    },
+    {
+      "term": "Đơn vị QLVH",
+      "meaning": "Doanh nghiệp cung cấp dịch vụ quản lý vận hành theo điều kiện và hợp đồng phù hợp.",
+      "source": "law",
+      "pages": "29–33"
+    },
+    {
+      "term": "Hội nghị nhà chung cư",
+      "meaning": "Cơ chế tập hợp chủ sở hữu tham gia quyết định các vấn đề thuộc thẩm quyền.",
+      "source": "law",
+      "pages": "11–13"
+    },
+    {
+      "term": "Phần sở hữu chung",
+      "meaning": "Bộ phận, diện tích hoặc trang thiết bị thuộc sở hữu chung theo hồ sơ và quy định.",
+      "source": "law",
+      "pages": "5–6"
+    },
+    {
+      "term": "Phần sở hữu riêng",
+      "meaning": "Phần được xác định thuộc một chủ sở hữu riêng theo căn cứ pháp lý.",
+      "source": "law",
+      "pages": "5–6"
+    },
+    {
+      "term": "Kinh phí bảo trì",
+      "meaning": "Khoản tiền dùng cho việc bảo trì phần sở hữu chung theo chế độ pháp lý tương ứng.",
+      "source": "handover",
+      "pages": "31–43"
+    },
+    {
+      "term": "Phí dịch vụ QLVH",
+      "meaning": "Khoản phí gắn với việc cung cấp dịch vụ quản lý vận hành, phân biệt với tiền bảo trì.",
+      "source": "finance",
+      "pages": "12–16"
+    },
+    {
+      "term": "Pre-opening",
+      "meaning": "Giai đoạn chuẩn bị nhân sự, hồ sơ, tài sản, nhà thầu và quy trình trước hoạt động chính thức.",
+      "source": "projects",
+      "pages": "2–24"
+    },
+    {
+      "term": "Operations",
+      "meaning": "Giai đoạn tổ chức vận hành thường kỳ để bảo đảm dịch vụ ổn định.",
+      "source": "projects",
+      "pages": "25–33"
+    },
+    {
+      "term": "Hồ sơ hoàn công",
+      "meaning": "Hồ sơ thể hiện tình trạng công trình đã thực hiện, phục vụ bàn giao và quản lý.",
+      "source": "handover",
+      "pages": "44–47"
+    },
+    {
+      "term": "Bản vẽ kỹ thuật",
+      "meaning": "Tài liệu mô tả hệ thống, cấu tạo hoặc bố trí hạng mục kỹ thuật.",
+      "source": "handover",
+      "pages": "20–25"
+    },
+    {
+      "term": "CO/CQ",
+      "meaning": "Chứng từ liên quan nguồn gốc/chất lượng thiết bị, cần đối chiếu theo loại vật tư và yêu cầu.",
+      "source": "handover",
+      "pages": "10"
+    },
+    {
+      "term": "PCCC",
+      "meaning": "Phòng cháy, chữa cháy; gồm yêu cầu, hệ thống, tài liệu và quy trình ứng phó liên quan.",
+      "source": "handover",
+      "pages": "8–10"
+    },
+    {
+      "term": "Biên bản bàn giao",
+      "meaning": "Tài liệu ghi nhận danh mục, tình trạng, thời điểm và các bên xác nhận bàn giao.",
+      "source": "handover",
+      "pages": "9–13"
+    },
+    {
+      "term": "Tài sản cố định (TSCĐ)",
+      "meaning": "Nhóm tài sản cần quản lý, kiểm kê và theo dõi theo quy trình tài chính của dự án.",
+      "source": "finance",
+      "pages": "8–10"
+    },
+    {
+      "term": "Công cụ dụng cụ (CCDC)",
+      "meaning": "Dụng cụ phục vụ công việc, cần có quy trình cấp phát và kiểm kê.",
+      "source": "projects",
+      "pages": "30"
+    },
+    {
+      "term": "Vật tư tiêu hao (VTTH)",
+      "meaning": "Vật tư sử dụng trong vận hành theo định mức và có theo dõi xuất nhập tồn.",
+      "source": "projects",
+      "pages": "30"
+    },
+    {
+      "term": "KPI",
+      "meaning": "Chỉ số đánh giá hiệu quả/chất lượng của một công việc hoặc dịch vụ.",
+      "source": "contracts",
+      "pages": "15–16"
+    },
+    {
+      "term": "SLA",
+      "meaning": "Mức cam kết dịch vụ về thời gian hoặc chất lượng, dùng làm ví dụ thiết kế tiêu chuẩn; thuật ngữ mở rộng.",
+      "source": "contracts",
+      "pages": "15–16"
+    },
+    {
+      "term": "Nhà thầu phụ",
+      "meaning": "Đơn vị được thuê cung cấp công việc/dịch vụ chuyên biệt cho dự án.",
+      "source": "projects",
+      "pages": "19–21"
+    },
+    {
+      "term": "Nghiệm thu",
+      "meaning": "Bước kiểm tra và ghi nhận kết quả công việc so với yêu cầu trước thanh toán/bàn giao.",
+      "source": "contracts",
+      "pages": "29–30"
+    },
+    {
+      "term": "Tạm ứng",
+      "meaning": "Khoản tiền cấp trước cho công việc theo quy trình có chứng từ và hoàn ứng.",
+      "source": "finance",
+      "pages": "8–9"
+    },
+    {
+      "term": "Hoàn ứng",
+      "meaning": "Quyết toán khoản tạm ứng bằng chứng từ và số tiền thực chi.",
+      "source": "finance",
+      "pages": "8–9"
+    },
+    {
+      "term": "Dự toán",
+      "meaning": "Ước tính nguồn lực và các khoản thu, chi cho kỳ hoặc hoạt động nhất định.",
+      "source": "finance",
+      "pages": "21–30"
+    },
+    {
+      "term": "Ngân sách vận hành",
+      "meaning": "Kế hoạch thu–chi phục vụ hoạt động tòa nhà theo kỳ.",
+      "source": "finance",
+      "pages": "21–30"
+    },
+    {
+      "term": "Bảo trì định kỳ",
+      "meaning": "Hoạt động bảo trì có kế hoạch theo lịch hoặc quy trình của hệ thống/công trình.",
+      "source": "contracts",
+      "pages": "26–30"
+    },
+    {
+      "term": "Bảo hành",
+      "meaning": "Trách nhiệm khắc phục trong điều kiện và thời hạn bảo hành theo hồ sơ/hợp đồng.",
+      "source": "projects",
+      "pages": "17–18"
+    },
+    {
+      "term": "Biên bản vi phạm",
+      "meaning": "Văn bản ghi nhận công việc không đạt yêu cầu hoặc vi phạm điều khoản.",
+      "source": "contracts",
+      "pages": "42–44"
+    },
+    {
+      "term": "Chăm sóc cư dân",
+      "meaning": "Cung cấp thông tin, tiếp nhận yêu cầu, hỗ trợ xử lý và phản hồi người sử dụng.",
+      "source": "projects",
+      "pages": "29"
+    },
+    {
+      "term": "Quy trình xử lý sự cố",
+      "meaning": "Chuỗi bước ghi nhận, đánh giá, chuyển xử lý, theo dõi và thông báo.",
+      "source": "projects",
+      "pages": "32–33"
+    }
+  ],
+  "final": [
+    [
+      "Hồ sơ hệ thống bơm thiếu hướng dẫn vận hành. Cách xử lý?",
+      [
+        "Ghi thiếu, yêu cầu bổ sung và chuyển kỹ thuật kiểm tra",
+        "Ký đủ ngay",
+        "Tự vận hành theo suy đoán"
+      ],
+      0,
+      "Ưu tiên ghi ngoại lệ và chuyên môn kiểm tra (Hồ sơ tr.20–25)."
+    ],
+    [
+      "Hợp đồng vệ sinh chỉ ghi “thực hiện định kỳ”. Bạn yêu cầu bổ sung?",
+      [
+        "Tần suất, khu vực, KPI và cách nghiệm thu",
+        "Chỉ logo công ty",
+        "Chỉ lời hứa"
+      ],
+      0,
+      "Phạm vi và tiêu chí cần đo được (Hợp đồng tr.14–16)."
+    ],
+    [
+      "Ngân sách dự kiến chi cao hơn thu. Bước đầu?",
+      [
+        "Kiểm tra giả định, cấu trúc chi và nguồn thu",
+        "Tự lấy quỹ bảo trì",
+        "Dừng hoàn toàn vệ sinh"
+      ],
+      0,
+      "Lập và cân đối ngân sách theo quy trình (Tài chính tr.21–30)."
+    ],
+    [
+      "Cư dân yêu cầu đổi nhà thầu. Bạn làm gì?",
+      [
+        "Ghi nhận, báo cáo và đối chiếu hợp đồng/thẩm quyền",
+        "Tự ký nhà thầu mới",
+        "Xóa yêu cầu"
+      ],
+      0,
+      "Phân định thẩm quyền và hợp đồng (Luật tr.11–28)."
+    ],
+    [
+      "Một hạng mục máy móc cần bảo trì. Điều gì quan trọng?",
+      [
+        "Hướng dẫn kỹ thuật, lịch, hồ sơ kiểm tra và nghiệm thu",
+        "Chỉ giá rẻ",
+        "Không cần người phụ trách"
+      ],
+      0,
+      "Bảo trì phải có tiêu chí/hồ sơ (Hợp đồng tr.26–30)."
+    ],
+    [
+      "Khi không chắc căn cứ pháp lý trong slide còn hiệu lực?",
+      [
+        "Đánh dấu cần kiểm tra nguồn chính thức",
+        "Áp dụng ngay",
+        "Dùng suy đoán"
+      ],
+      0,
+      "Luật có thể đã sửa đổi; đọc nguồn chính thức trước sử dụng."
+    ]
+  ],
+  "official": [
+    {
+      "name": "Luật Nhà ở số 27/2023/QH15 – CSDL VBPL",
+      "url": "https://vbpl.vn/TW/Pages/ivbpq-thuoctinh.aspx?ItemID=169032",
+      "note": "CSDL ghi nhận hết hiệu lực một phần tại thời điểm tra cứu 03/11/2026."
+    },
+    {
+      "name": "Nghị định 95/2024/NĐ-CP – Cổng Chính phủ",
+      "url": "https://vanban.chinhphu.vn/?classid=0&docid=210761&pageid=27160",
+      "note": "Văn bản gốc; kiểm tra văn bản sửa đổi trước khi áp dụng."
+    },
+    {
+      "name": "Tìm văn bản liên quan Thông tư 05/2024/TT-BXD",
+      "url": "https://vbpl.vn/",
+      "note": "Tra cứu hiệu lực, sửa đổi và văn bản hợp nhất trong cơ sở dữ liệu chính thức."
+    }
+  ],
+  "updated": "03/11/2026"
+};
+
+</script><script>
+/* Building Operations Learning Hub — 100% static, local-first. */
+(function(){
+'use strict';
+const D=window.COURSE_DATA;
+if(!D){document.body.textContent='Không tải được dữ liệu khóa học.';return;}
+const STORE_KEY='bo-learning-hub:v1';
+const defaultStore=()=>({version:1,opened:[],completed:[],bookmarked:[],flashKnown:[],scenarioDone:{},scores:{},lastLesson:null,sessions:[]});
+let data=defaultStore();
+try{const v=JSON.parse(localStorage.getItem(STORE_KEY)||'null');if(v&&v.version===1)data={...data,...v};}catch(e){/* Private browsing: keep in memory */}
+const runtime={checkpoint:{},checkpointChecked:{},quiz:{},flashFlip:{},practiceTab:'m1',search:'',focus:null};
+const $=s=>document.querySelector(s);
+const unique=(list)=>[...new Set(list)];
+const save=()=>{try{localStorage.setItem(STORE_KEY,JSON.stringify(data));}catch(e){/* safe degradation */}};
+const fmtDate=()=>new Date().toISOString().slice(0,10);
+const h=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const icons={
+compass:'<circle cx="12" cy="12" r="9"/><path d="m16 8-2.5 5.5L8 16l2.5-5.5z"/>',
+scale:'<path d="M12 3v18M5 7h14M5 7 2 13a4 4 0 0 0 6 0L5 7Zm14 0-3 6a4 4 0 0 0 6 0l-3-6ZM8 21h8"/>',
+folders:'<path d="M4 7V5a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v10"/><path d="M3 10h17a2 2 0 0 1 2 2l-2 7H4l-2-7a2 2 0 0 1 1-2Z"/>',
+building:'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 7h2M14 7h2M9 11h2M14 11h2M9 15h2M14 15h2M11 21v-4h2v4"/>',
+'file-check':'<path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10z"/><path d="M13 3v7h7M8 16l2 2 4-4"/>',
+wallet:'<rect x="3" y="5" width="18" height="15" rx="3"/><path d="M3 8h18M16 14h2"/>',
+flag:'<path d="M5 21V4M5 5c4-3 8 3 14 0v11c-5 3-10-3-14 0"/>',
+home:'<path d="m3 10 9-7 9 7v10H3zM9 20v-7h6v7"/>',
+book:'<path d="M4 4h7a4 4 0 0 1 4 4v13H8a4 4 0 0 0-4 0V4Zm11 4a4 4 0 0 1 4-4h1v17h-1a4 4 0 0 0-4 0"/>',
+brain:'<path d="M12 18v3M12 4a4 4 0 0 0-7 2 4 4 0 0 0-1 7 4 4 0 0 0 4 6 4 4 0 0 0 4-4M12 4a4 4 0 0 1 7 2 4 4 0 0 1 1 7 4 4 0 0 1-4 6 4 4 0 0 1-4-4"/>',
+chart:'<path d="M4 20V10M10 20V4M16 20v-8M22 20v-14"/>',
+search:'<circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/>',
+chevron:'<path d="m9 5 7 7-7 7"/>',
+left:'<path d="m15 5-7 7 7 7"/>',
+check:'<path d="m5 12 4 4L19 6"/>',
+bookmark:'<path d="M5 3h14v18l-7-5-7 5z"/>',
+clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+alert:'<path d="M12 3 2 21h20L12 3ZM12 9v5M12 18h.01"/>',
+info:'<circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7h.01"/>',
+arrow:'<path d="M5 12h14m-7-7 7 7-7 7"/>',
+'arrow-down':'<path d="m6 9 6 6 6-6"/>',
+light:'<path d="M9 18h6M10 21h4M9 15a6 6 0 1 1 6 0c-1 1-2 2-2 3h-2c0-1-1-2-2-3Z"/>',
+restart:'<path d="M3 11a9 9 0 1 1 2 6M3 4v7h7"/>',
+checklist:'<path d="m3 6 2 2 3-3M11 7h10M3 13l2 2 3-3M11 14h10M3 20l2 2 3-3M11 21h10"/>',
+download:'<path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4"/>',
+upload:'<path d="M12 21V9m-5 5 5-5 5 5M4 7V3h16v4"/>',
+trash:'<path d="M3 6h18M9 6V4h6v2M6 6l1 15h10l1-15M10 10v7m4-7v7"/>',
+'file-text':'<path d="M13 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10zM13 3v7h7M8 14h8M8 17h8"/>',
+x:'<path d="M5 5 19 19M19 5 5 19"/>'
+};
+const icon=(name,cls='')=>`<svg class="icon ${cls}" viewBox="0 0 24 24" aria-hidden="true">${icons[name]||icons.info}</svg>`;
+const href=(route)=>'#/'+route;
+const route=()=>{const raw=decodeURIComponent(location.hash.replace(/^#\/?/,''));return raw||'home';};
+function navigate(s){const href2=href(s);if(location.hash===href2){render(true);}else location.hash=href2;}
+const countLessons=mid=>D.lessons.filter(x=>x.module===mid).length;
+const moduleLessons=mid=>D.lessons.filter(x=>x.module===mid);
+const moduleDone=mid=>moduleLessons(mid).filter(x=>data.completed.includes(x.id)).length;
+const overall=()=>Math.round(data.completed.length/D.lessons.length*100);
+const modPercent=mid=>{const len=countLessons(mid);return len?Math.round(100*moduleDone(mid)/len):0;};
+const activeTab=(r)=>r==='home'?'home':r==='path'||r.startsWith('module/')||r.startsWith('lesson/')?'path':r==='practice'||r.startsWith('quiz/')||r==='challenge'?'practice':r==='reference'?'reference':'progress';
+function appShell(inner){const current=activeTab(route());const links=[['home','home','Trang chủ'],['path','book','Lộ trình'],['practice','brain','Luyện tập'],['reference','search','Tra cứu'],['progress','chart','Tiến độ']];
+return `<div class="app-shell"><aside class="desktop-sidebar"><a class="brand" href="#/home"><span class="brand-mark">${icon('building')}</span><span><span class="brand-small">Building operations</span><br>LEARNING HUB</span></a><div class="sidebar-links">${links.map(a=>`<a href="${href(a[0])}" class="sidebar-link ${current===a[0]?'active':''}">${icon(a[1])}${a[2]}</a>`).join('')}</div><div class="sidebar-end">${icon('light')}<br><strong>Học từng bước nhỏ.</strong><br>Hiểu kiến thức, thử ứng dụng và tự đánh giá — ngay trên điện thoại.</div></aside><div class="main-area"><header class="topbar"><a class="brand" href="#/home"><span class="brand-mark">${icon('building')}</span><span><span class="brand-small">Building operations</span><br>LEARNING HUB</span></a><span class="brand-small" style="display:none">SELF-PACED</span><div class="mobile-top-actions"><button class="round-button" data-route="reference" aria-label="Tìm kiếm">${icon('search')}</button><button class="round-button" data-route="progress" aria-label="Tiến độ">${icon('chart')}</button></div></header>${inner}<footer class="footer">Học liệu tự học tham khảo • Không phải chứng nhận nghiệp vụ • Cập nhật nguồn 03/11/2026</footer></div><nav class="mobile-nav" aria-label="Điều hướng chính">${links.map(x=>`<a href="${href(x[0])}" class="nav-link ${current===x[0]?'active':''}" ${current===x[0]?'aria-current="page"':''}>${icon(x[1])}<span>${x[2]}</span></a>`).join('')}</nav></div><div class="toast" id="toast" role="status" aria-live="polite"></div>`;}
+function showToast(s){const el=$('#toast');if(!el)return;el.textContent=s;el.classList.add('show');clearTimeout(window.__toast);window.__toast=setTimeout(()=>el.classList.remove('show'),2700);}
+function heading(title,sub,eyebrow='Tự học theo nhịp của bạn'){return `<div class="pagehead"><p class="eyebrow">${h(eyebrow)}</p><h1 class="page-title">${h(title)}</h1>${sub?`<p class="lede">${h(sub)}</p>`:''}</div>`;}
+const pct=p=>`<div class="progress-track"><div class="progress-fill" style="--progress:${p}%"></div></div>`;
+const legalBanner=()=>`<div class="banner">${icon('alert')}<div><strong>Lưu ý về hiệu lực pháp luật</strong><br>Tài liệu gốc là slide đào tạo; một số căn cứ pháp lý đã có thay đổi. Luật Nhà ở 2023 được CSDL văn bản pháp luật ghi “hết hiệu lực một phần”. Luôn kiểm tra văn bản hiện hành trước khi áp dụng thực tế. <a href="${D.official[0].url}" target="_blank" rel="noopener noreferrer">Nguồn kiểm tra</a>.</div></div>`;
+function moduleCard(m){const n=moduleLessons(m.id);const p=modPercent(m.id);return `<a class="panel module-card" href="${href('module/'+m.id)}"><div class="module-card-top"><div class="square-icon ${m.id==='m6'?'warm':''}">${icon(m.icon)}</div><div><div class="eyebrow" style="font-size:10px;margin:0 0 3px">${h(m.eyebrow)}</div><h3>${h(m.title)}</h3><p>${h(m.subtitle)}</p></div></div><div class="module-meta"><span>${icon('book')} ${n.length} ${m.id==='m6'?'thử thách':'bài học'}</span><span>${icon('clock')} ${n.reduce((s,x)=>s+x.time,0)} phút</span>${data.scores[m.id]?.best>=80?'<span class="pill solid">Đã đạt quiz</span>':''}</div>${pct(p)}<div class="progress-label"><span>${moduleDone(m.id)}/${n.length} bài hoàn thành</span><span>${p}%</span></div></a>`;}
+function resumeLesson(){return D.lessons.find(x=>x.id===data.lastLesson)||D.lessons[0];}
+function dashboard(){const resume=resumeLesson();const done=data.completed.length;let greet=done===0?'Bắt đầu hành trình tự học':done>=D.lessons.length?'Bạn đã hoàn thành các bài học':'Chào mừng bạn quay lại';return `<main class="page"><section class="hero"><p class="eyebrow">SELF-PACED • MOBILE-FIRST</p><h1 class="hero-title">${greet}</h1><p>Hiểu nghề quản lý vận hành chung cư từ nền tảng pháp lý đến những quyết định trong công việc. Học theo nhịp của bạn, không cần đăng nhập.</p><button class="button light" data-route="lesson/${resume.id}">${done?'Tiếp tục bài đang học':'Bắt đầu bài đầu tiên'} ${icon('arrow')}</button><svg class="hero-icon" viewBox="0 0 170 180" fill="none" aria-hidden="true"><path d="M5 178V88h40v90M45 178V28h68v150M113 178V70h52v108" stroke="#d8f5eb" stroke-width="3"/><path d="M16 105h12m-12 20h12m-12 20h12M63 48h14m15 0h14M63 70h14m15 0h14M63 93h14m15 0h14M63 116h14m15 0h14M63 140h14m15 0h14m27-53h12m-12 23h12m-12 23h12" stroke="#d8f5eb" stroke-width="3"/><path d="M0 178h170" stroke="#d8f5eb" stroke-width="3"/></svg></section><div class="stats"><div class="panel stat"><div class="num">${overall()}%</div><div class="muted">Tiến độ toàn khóa</div></div><div class="panel stat"><div class="num">${done}<span style="font-size:14px;color:var(--sub)">/41</span></div><div class="muted">Bài đã hoàn thành</div></div><div class="panel stat"><div class="num">${Object.values(data.scores).filter(s=>s.best>=80).length}</div><div class="muted">Bài thi đạt ≥80%</div></div></div><div class="section-heading"><div><h2 class="section-title">Lộ trình học của bạn</h2><p class="section-sub">7 module • 5 nguồn PDF • từ kiến thức đến ứng dụng</p></div><a href="#/path" class="text-link">Xem tất cả</a></div><div class="grid-module">${D.modules.slice(0,6).map(moduleCard).join('')}</div><div class="section-heading"><h2 class="section-title">Học có phương pháp</h2></div><div class="learning-tip"><div class="square-icon">${icon('brain')}</div><div><strong>Đọc → Nhớ lại → Thử làm → Ôn tập</strong><p>Mỗi bài có mục tiêu, ví dụ, nhiệm vụ ngắn và kiểm tra để chuyển kiến thức thành hiểu biết.</p></div></div>${legalBanner()}</main>`;}
+function pathPage(){return `<main class="page">${heading('Lộ trình tự học','Bắt đầu từ nhập môn, sau đó học pháp luật, hồ sơ, vận hành, hợp đồng và tài chính. Bạn có thể mở module bất kỳ.')}${legalBanner()}<div class="section-heading"><h2 class="section-title">7 module học tập</h2><span class="pill">41 bài · 54 câu hỏi</span></div><div class="grid-module">${D.modules.map(moduleCard).join('')}</div><div class="section-heading"><h2 class="section-title">Nguồn học liệu</h2></div><div class="panel" style="padding:18px"><p class="section-sub" style="margin:0 0 12px">5 file PDF được chuyển thể thành bài học; trang gốc được ghi rõ trong từng bài, không công khai nguyên bản slide.</p>${Object.values(D.sources).map((s,i)=>`<div class="source-ref" style="margin-bottom:8px"><b>${i+1}. ${h(s.name)}</b><p>${s.pages} trang • ${h(s.remark)}</p></div>`).join('')}</div></main>`;}
+function modulePage(id){const m=D.modules.find(x=>x.id===id);if(!m)return notFound();const ls=moduleLessons(id);const done=moduleDone(id);const score=data.scores[id];return `<main class="page"><div class="breadcrumbs"><a href="#/path">Lộ trình</a>${icon('chevron')}<span>${h(m.title)}</span></div><div class="panel module-hero"><span class="square-icon ${id==='m6'?'warm':''}">${icon(m.icon)}</span><div><p class="eyebrow" style="margin:0 0 6px">${h(m.eyebrow)}</p><h1>${h(m.title)}</h1><p>${h(m.subtitle)}</p><div class="module-achievements"><span class="mini-stat">${icon('book')} ${ls.length} bài học</span><span class="mini-stat">${icon('clock')} ${ls.reduce((a,x)=>a+x.time,0)} phút</span>${score?`<span class="mini-stat">${icon('check')} Quiz tốt nhất ${score.best}%</span>`:''}</div></div></div>${pct(modPercent(id))}<div class="progress-label"><span>${done}/${ls.length} bài đã hoàn thành</span><span>${modPercent(id)}%</span></div><div class="section-heading"><div><h2 class="section-title">Nội dung bài học</h2><p class="section-sub">Mở từng bài, làm câu hỏi cuối bài để ghi nhận đã học.</p></div></div><div class="lesson-list">${ls.map((l,i)=>lessonRow(l,i)).join('')}</div><div class="panel" style="padding:19px;margin-top:18px"><div class="section-tag">${icon('brain')} Đánh giá cuối module</div><h3 style="margin:0 0 6px">${id==='m6'?'Bài kiểm tra tình huống tích hợp':'Kiểm tra khả năng hiểu và ứng dụng'}</h3><p class="section-sub">${id==='m6'?'6':'Khoảng 10'} câu • Có giải thích đáp án • Đạt từ 80% • Có thể thi lại</p>${score?`<div class="info-chips"><span class="pill">Điểm cao nhất: ${score.best}%</span><span class="pill ${score.best>=80?'solid':'warn'}">${score.best>=80?'Đã đạt':'Cần ôn thêm'}</span></div>`:''}<button class="button" data-startquiz="${h(id)}" style="margin-top:15px">${score?'Làm lại bài kiểm tra':'Bắt đầu bài kiểm tra'} ${icon('arrow')}</button></div>${id!=='m0'&&id!=='m6'?`<div class="section-heading"><h2 class="section-title">Luyện tập tình huống</h2></div><div class="learning-tip"><div class="square-icon">${icon('light')}</div><div style="flex:1"><strong>Hai tình huống nghề nghiệp</strong><p>Luyện quyết định phù hợp trong những tình huống thường gặp.</p></div><button class="button small outline" data-route="practice">Mở</button></div>`:''}</main>`;}
+function lessonRow(l,i){const done=data.completed.includes(l.id),open=data.opened.includes(l.id);return `<a class="lesson-row" href="${href('lesson/'+l.id)}"><span class="lesson-number ${done?'is-done':''}">${done?icon('check'):String(i+1).padStart(2,'0')}</span><span class="body"><strong>${h(l.title)}</strong><small>${l.time} phút · ${done?'Đã hoàn thành':open?'Đang học':'Chưa bắt đầu'}</small></span>${icon('chevron')}</a>`;}
+function sourceDetails(l){const s=D.sources[l.source];return s?`<div class="source-ref"><b>${icon('file-text')} Tham chiếu học liệu</b><p>${h(s.name)} · Trang ${h(l.pages)}</p><p class="smallprint">Số trang là vị trí trên PDF gốc người học đã cung cấp. Nội dung phía trên được biên tập lại cho mục đích tự học.</p></div>`:`<div class="source-ref"><b>Ghi chú nguồn</b><p>${h(l.deep)}</p></div>`;}
+function visualFor(l){
+ const flows={
+ m0:['Hiểu việc','Gợi nhớ','Thử làm'],
+ m1:['Xác định vai trò','Kiểm tra căn cứ','Đúng thẩm quyền'],
+ m2:['Lập danh mục','Kiểm đếm','Ghi ngoại lệ','Biên bản'],
+ m3:['Chuẩn bị','Triển khai','Giám sát','Báo cáo'],
+ m4:['Mô tả việc','Thiết lập KPI','Kiểm tra','Nghiệm thu'],
+ m5:['Ước tính thu','Dự toán chi','Đối chiếu','Điều chỉnh'],
+ m6:['Đọc tình huống','Kiểm tra chứng cứ','Quyết định']
+ };
+ const ordered=D.lessons.filter(x=>x.module===l.module),first=ordered[0];
+ if(l.id!==first.id)return '';
+ return `<div style="margin-top:20px"><div class="section-tag">${icon('arrow')} SƠ ĐỒ GHI NHỚ</div><div class="line-graphic">${(flows[l.module]||[]).map((x,i)=>`${i?'<span class="arrow" aria-hidden="true">›</span>':''}<span class="step">${h(x)}</span>`).join('')}</div></div>`;
+}
+function lessonPage(id){const l=D.lessons.find(x=>x.id===id);if(!l)return notFound();if(!data.opened.includes(id)){data.opened.push(id);save();}if(data.lastLesson!==id){data.lastLesson=id;save();}const m=D.modules.find(x=>x.id===l.module),ls=moduleLessons(l.module),idx=ls.findIndex(x=>x.id===id),prev=ls[idx-1]||D.lessons[D.lessons.indexOf(l)-1],next=ls[idx+1]||D.lessons[D.lessons.indexOf(l)+1];const isDone=data.completed.includes(id);const checkpoint=D.questions[l.module]?.find(q=>q.lesson===id);
+const concepts=l.points.map((p,i)=>`<div class="concept"><strong>${i+1}. ${h(p.label)}</strong><p>${h(p.body)}</p></div>`).join('');
+return `<main class="page"><div class="breadcrumbs"><a href="#/path">Lộ trình</a>${icon('chevron')}<a href="${href('module/'+l.module)}">${h(m.title)}</a>${icon('chevron')}<span>Bài ${idx+1}</span></div><div class="content-grid"><div class="reading-col"><header class="reader-head"><span class="lesson-counter">BÀI ${String(idx+1).padStart(2,'0')} / ${ls.length} · ${h(m.eyebrow)}</span><h1>${h(l.title)}</h1><p class="reader-lede">${h(l.why)}</p><div class="reader-tools"><span class="pill">${icon('clock')} ${l.time} phút</span><span class="pill ${isDone?'solid':''}">${isDone?'✓ Đã hoàn thành':'Đang học'}</span><button class="button small outline" data-bookmark="${h(l.id)}">${icon('bookmark')} ${data.bookmarked.includes(l.id)?'Đã lưu':'Lưu bài'}</button></div></header><article class="reader-article"><section class="reading-section" id="muc-tieu"><div class="section-tag">${icon('compass')} Mục tiêu bài học</div><h2>Sau bài này, bạn sẽ hiểu gì?</h2><p>${h(l.why)}</p><p class="notice">${icon('info')} Đọc để hiểu trước, rồi tự trả lời câu hỏi cuối bài. Nội dung biên tập từ tài liệu nguồn, không thay thế nghiệp vụ có giám sát.</p></section><section class="reading-section" id="kien-thuc"><div class="section-tag">${icon('book')} Core learning</div><h2>Những điều cần nhớ</h2><div class="concepts">${concepts}</div>${visualFor(l)}</section><section class="reading-section" id="tinh-huong"><div class="section-tag gold-text">${icon('light')} Liên hệ công việc</div><h2>Một tình huống gần thực tế</h2><div class="example-box"><p><strong>Tình huống mô phỏng.</strong> ${h(l.example)}</p></div><h3>Thử tự làm</h3><div class="practice-box"><p>${h(l.task)}</p></div></section><section class="reading-section" id="kiem-tra"><div class="section-tag">${icon('brain')} Retrieval practice</div><h2>Kiểm tra sau bài học</h2>${checkpoint?renderCheckpoint(l,checkpoint):`<p>Hãy tự trả lời nhiệm vụ ở trên, sau đó xác nhận đã thực hành.</p><button class="button" data-marklesson="${h(l.id)}">${isDone?'Đã hoàn thành':'Đã thử làm bài tập'}</button>`}</section><section class="reading-section" id="tham-chieu"><div class="section-tag">${icon('file-text')} Advanced reference</div><h2>Đọc sâu và truy nguồn</h2>${sourceDetails(l)}<details style="margin-top:12px"><summary>Tại sao nội dung này được đưa vào lộ trình?</summary><p>${h(l.deep||'Bài học cung cấp phần kiến thức nền cần thiết cho hoạt động quản lý vận hành.')}</p><p>Để áp dụng pháp luật hoặc phê duyệt một vấn đề kỹ thuật thực tế, cần xem văn bản hiệu lực và người có thẩm quyền chuyên môn.</p></details><div class="inline-legal">Một số điều khoản được trình bày trong slide có thể đã sửa đổi. Website không cung cấp tư vấn pháp lý.</div></section></article><div class="reader-bottom"><button class="button outline" data-route="${prev?'lesson/'+prev.id:'module/'+l.module}">${icon('left')} Bài trước</button><button class="button" data-route="${next?'lesson/'+next.id:'module/'+l.module}">Bài tiếp ${icon('arrow')}</button></div></div><aside class="right-rail"><div class="panel"><span class="eyebrow">TRONG BÀI NÀY</span><div class="rail-list"><a href="#" data-anchor="muc-tieu">Mục tiêu</a><a href="#" data-anchor="kien-thuc">Kiến thức cốt lõi</a><a href="#" data-anchor="tinh-huong">Tình huống & thực hành</a><a href="#" data-anchor="kiem-tra">Kiểm tra</a><a href="#" data-anchor="tham-chieu">Nguồn & đọc sâu</a></div><hr class="divider"><div class="progress-label"><span>Tiến độ module</span><b>${modPercent(l.module)}%</b></div>${pct(modPercent(l.module))}</div></aside></div></main>`;}
+function isMulti(q){return Array.isArray(q.answer)}
+function renderChoices(q,selected,name,prefix,locked=false){return `<div class="choice-list">${q.opts.map((op,i)=>{let sel=selected.includes(i);return `<button type="button" class="choice ${sel?'selected':''}" data-${prefix}="${h(name)}:${i}" ${locked?'disabled':''} aria-pressed="${sel}"><span class="choice-dot">${sel?'✓':String.fromCharCode(65+i)}</span><span>${h(op)}</span></button>`;}).join('')}</div>`;}
+const correct=(q,ans)=>{const a=isMulti(q)?q.answer:[q.answer];return a.length===ans.length&&a.every(v=>ans.includes(v))};
+function renderCheckpoint(l,q){const chosen=runtime.checkpoint[l.id]||[],checked=runtime.checkpointChecked[l.id],done=data.completed.includes(l.id);return `<div class="mini-quiz"><div class="question-heading">${h(q.q)}</div>${renderChoices(q,chosen,l.id,'checkchoice',!!checked)}${checked?`<div class="feedback ${checked.good?'good':'bad'}"><strong>${checked.good?'Đúng rồi!':'Chưa chính xác, hãy thử lại.'}</strong>${h(q.why)}</div>`:''}<div class="quiz-actions"><button class="button small" data-checksubmit="${h(l.id)}" ${!chosen.length||checked?.good?'disabled':''}>${done?'Đã hoàn thành':'Kiểm tra đáp án'}</button>${checked&&!checked.good?`<button class="button small outline" data-checkretry="${h(l.id)}">Thử lại</button>`:''}</div><div class="smallprint" style="margin-top:9px">${isMulti(q)?'Chọn tất cả đáp án đúng.':'Chọn một đáp án.'} Trả lời đúng để đánh dấu bài học hoàn thành.</div></div>`;}
+function quizStart(mid){const q=mid==='m6'?D.final.map((a,i)=>({id:'final'+i,q:a[0],opts:a[1],answer:a[2],why:a[3]})):D.questions[mid];if(!q?.length){showToast('Chưa có câu hỏi cho module này');return;}runtime.quiz[mid]={index:0,answers:{},verified:{},result:null};navigate('quiz/'+mid);}
+function quizPage(mid){const m=D.modules.find(x=>x.id===mid);if(!m)return notFound();const qs=mid==='m6'?D.final.map((a,i)=>({id:'final'+i,q:a[0],opts:a[1],answer:a[2],why:a[3]})):D.questions[mid];let s=runtime.quiz[mid];if(!s){s={index:0,answers:{},verified:{},result:null};runtime.quiz[mid]=s;}if(s.result!==null){return `<main class="page">${heading('Kết quả bài kiểm tra',m.title,'TỔNG KẾT & PHẢN HỒI')}<div class="panel quiz-result"><div class="eyebrow">BẠN ĐÃ HOÀN THÀNH ${qs.length} CÂU HỎI</div><div class="result-figure ${s.result>=80?'result-good':'result-bad'}">${s.result}%</div><h2>${s.result>=80?'Đã đạt mục tiêu kiểm tra':'Cần ôn tập thêm một chút'}</h2><p class="results-note">${s.result>=80?'Bạn đã đạt tiêu chí tự đánh giá của module. Kết quả chỉ phục vụ tự học, không phải chứng nhận nghề nghiệp.':'Hãy xem lại các bài có câu trả lời sai, thử làm thêm tình huống và làm lại khi đã sẵn sàng.'}</p><div class="quiz-actions" style="justify-content:center"><button class="button outline" data-route="module/${mid}">Về module</button><button class="button" data-startquiz="${mid}">${icon('restart')} Làm lại bài kiểm tra</button></div></div></main>`;}
+const idx=s.index,q=qs[idx],selected=s.answers[idx]||[],verified=s.verified[idx];return `<main class="page"><div class="breadcrumbs"><a href="${href('module/'+mid)}">${h(m.title)}</a>${icon('chevron')} Bài kiểm tra</div><div class="quiz-wrap"><p class="eyebrow">ASSESSMENT · ${h(m.eyebrow)}</p><h1 class="page-title">Tự kiểm tra hiểu biết</h1><p class="question-count">Câu ${idx+1} trên ${qs.length} · Đạt khi đúng tối thiểu 80%</p><div class="quiz-progress">${qs.map((_,i)=>`<i class="${i<=idx?'done':''}"></i>`).join('')}</div><div class="panel quiz-card"><div class="section-tag">${icon('brain')} ${isMulti(q)?'Chọn nhiều đáp án':'Chọn một đáp án'}</div><h2>${h(q.q)}</h2>${renderChoices(q,selected,`${mid}:${idx}`,'quizchoice',!!verified)}${verified?`<div class="feedback ${verified.good?'good':'bad'}"><strong>${verified.good?'Chính xác!':'Câu trả lời chưa đúng.'}</strong>${h(q.why)}<br><span style="font-weight:700">Đáp án: ${[...(isMulti(q)?q.answer:[q.answer])].map(v=>String.fromCharCode(65+v)).join(', ')}.</span></div>`:''}<div class="quiz-actions">${verified?`<button class="button full" data-quiznext="${mid}">${idx===qs.length-1?'Xem kết quả':'Câu tiếp theo'} ${icon('arrow')}</button>`:`<button class="button full" data-quizsubmit="${mid}" ${!selected.length?'disabled':''}>Kiểm tra đáp án</button>`}</div></div><p class="smallprint" style="margin-top:14px">Sau khi kiểm tra một câu, bạn sẽ xem được giải thích trước khi sang câu tiếp theo.</p></div></main>`;}
+function practicePage(){const mid=runtime.practiceTab;const m=D.modules.find(x=>x.id===mid);const list=D.scenarios[mid]||[];const done=Object.values(data.scenarioDone).filter(Boolean).length;return `<main class="page">${heading('Luyện tập & ôn kiến thức','Câu hỏi kiến thức, tình huống nghề nghiệp và flashcard. Sai cũng hữu ích — vì bạn luôn nhận được giải thích.')}
+<div class="stats"><div class="panel stat"><div class="num">${done}<span style="font-size:14px">/10</span></div><div class="muted">Tình huống đã giải</div></div><div class="panel stat"><div class="num">${data.flashKnown.length}</div><div class="muted">Thuật ngữ đã biết</div></div><div class="panel stat"><div class="num">${Object.values(data.scores).filter(x=>x.best>=80).length}</div><div class="muted">Module đạt 80%</div></div></div><div class="section-heading"><h2 class="section-title">Thực hành tình huống</h2></div><div class="tabs" role="tablist" aria-label="Chủ đề tình huống">${D.modules.filter(x=>D.scenarios[x.id]).map(x=>`<button class="tab ${mid===x.id?'active':''}" role="tab" aria-selected="${mid===x.id}" data-practicetab="${x.id}">${h(x.eyebrow)}</button>`).join('')}</div><p class="section-sub">${h(m.title)} · tình huống mô phỏng từ nội dung tài liệu.</p>${list.map((sc,i)=>scenarioCard(mid,i,sc)).join('')}<div class="section-heading"><h2 class="section-title">Kiểm tra theo module</h2></div><div class="grid-module">${D.modules.filter(m=>m.id!=='m6').map(m=>`<div class="panel" style="padding:16px"><div class="section-tag">${icon(m.icon)} ${h(m.eyebrow)}</div><h3 style="margin:2px 0 7px;font-size:15px">${h(m.title)}</h3><p class="section-sub">${D.questions[m.id].length} câu · Điểm cao nhất ${data.scores[m.id]?.best??'—'}%</p><button class="button small outline" data-startquiz="${m.id}" style="margin-top:12px">Bắt đầu</button></div>`).join('')}</div><div class="section-heading"><h2 class="section-title">Flashcards</h2><a class="text-link" href="#/cards">Ôn toàn bộ thuật ngữ</a></div><div class="learning-tip"><div class="square-icon">${icon('brain')}</div><div style="flex:1"><strong>32 thuật ngữ chuyên môn</strong><p>Lật thẻ, tự nhớ định nghĩa, đánh dấu phần cần ôn.</p></div><button class="button small outline" data-route="cards">Ôn tập</button></div><div class="section-heading"><h2 class="section-title">Tình huống tổng hợp</h2></div><div class="panel" style="padding:20px"><div class="eyebrow">CAPSTONE PRACTICE</div><h3 style="margin:0 0 7px">Tòa nhà Ánh Dương – từ bàn giao đến vận hành</h3><p class="section-sub">Tích hợp pháp luật, hồ sơ, vận hành, hợp đồng và ngân sách trong một tình huống duy nhất.</p><button class="button" style="margin-top:15px" data-route="challenge">Thử thách cuối khóa ${icon('arrow')}</button></div></main>`;}
+function scenarioCard(mid,i,sc){const key=mid+':'+i;const sel=runtime.checkpoint['sc:'+key]||[],done=data.scenarioDone[key];return `<div class="panel scenario-card"><span class="section-tag gold-text">${icon('light')} Tình huống ${i+1}</span><h3>${h(sc.title)}</h3><p>${h(sc.context)}</p><div class="choice-list">${sc.choices.map((c,j)=>`<button class="choice ${sel.includes(j)?'selected':''} ${done&&j===sc.answer?'correct':''}" data-scenariochoice="${key}:${j}" ${done?'disabled':''}><span class="choice-dot">${sel.includes(j)?'✓':String.fromCharCode(65+j)}</span>${h(c)}</button>`).join('')}</div>${done?`<div class="feedback good"><strong>Đã hoàn thành</strong>${h(sc.feedback)}</div>`:`<button class="button small" data-scenariosubmit="${key}" ${!sel.length?'disabled':''} style="margin-top:12px">Kiểm tra quyết định</button>`}</div>`;}
+function cardsPage(){const known=data.flashKnown.length;return `<main class="page">${heading('Flashcard thuật ngữ','Tự nghĩ định nghĩa trước khi lật thẻ. Những thẻ bạn đã nhớ được có thể đánh dấu để tập trung ôn các phần còn lại.')}<div class="learning-tip"><div class="square-icon">${icon('brain')}</div><div><strong>${known}/${D.glossary.length} thuật ngữ đã biết</strong><p>Tiến độ được lưu trên thiết bị. Chạm thẻ để lật mặt.</p></div></div><div class="flashcard-grid">${D.glossary.map((x,i)=>`<div class="panel flash-card"><div><span class="eyebrow">THẺ ${i+1}/${D.glossary.length}</span><div class="term">${h(x.term)}</div>${runtime.flashFlip[i]?`<div class="meaning" style="margin-top:11px">${h(x.meaning)}</div>`:`<p class="section-sub">Bạn có thể tự giải thích thuật ngữ này không?</p>`}</div><div class="flash-actions"><button class="button small outline" data-flip="${i}">${runtime.flashFlip[i]?'Ẩn định nghĩa':'Lật xem đáp án'}</button><button class="button small ${data.flashKnown.includes(i)?'':'outline'}" data-known="${i}">${data.flashKnown.includes(i)?'✓ Đã biết':'Cần ôn'}</button></div><small>${h(D.sources[x.source]?.short)} · Tr. ${h(x.pages)}</small></div>`).join('')}</div></main>`;}
+function referenceResults(){const q=runtime.search.trim().toLocaleLowerCase('vi');const ascii=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[đĐ]/g,'d').toLowerCase();const match=s=>ascii(s).includes(ascii(q));const gs=D.glossary.filter(g=>!q||match(g.term+' '+g.meaning));const ls=q?D.lessons.filter(l=>match(l.title+' '+l.why+' '+l.points.map(p=>p.label+' '+p.body).join(' '))):[];return `<div class="section-heading"><div><h2 class="section-title">Thuật ngữ ${q?'phù hợp':'cần nhớ'}</h2><p class="section-sub">${gs.length} thuật ngữ${q?` · ${ls.length} bài học liên quan`:''}</p></div></div><div class="glossary-list">${gs.map(g=>`<div class="panel glossary-card"><strong>${h(g.term)}</strong><p>${h(g.meaning)}</p><small>PDF: ${h(D.sources[g.source]?.short)} · Trang ${h(g.pages)}</small></div>`).join('')||'<div class="empty">Không thấy thuật ngữ phù hợp.</div>'}</div>${q?`<div class="section-heading"><h2 class="section-title">Bài học liên quan</h2></div><div class="lesson-list">${ls.map(l=>lessonRow(l,moduleLessons(l.module).indexOf(l))).join('')||'<div class="empty">Chưa có bài học trùng khớp.</div>'}</div>`:''}`;}
+function referencePage(){return `<main class="page">${heading('Từ điển & nguồn tham chiếu','Tra cứu thuật ngữ, khái niệm pháp luật và vị trí trang PDF gốc mà không phải học lại từ đầu.')}<div class="searchbox">${icon('search')}<input id="reference-search" type="search" value="${h(runtime.search)}" placeholder="Tìm: Ban quản trị, KPI, kinh phí..." aria-label="Tìm thuật ngữ và bài học" autocomplete="off"></div><div id="search-results">${referenceResults()}</div><div class="section-heading"><h2 class="section-title">Nguồn văn bản pháp luật để đối chiếu</h2></div>${legalBanner()}<div class="glossary-list" style="margin-top:13px">${D.official.map(x=>`<div class="panel glossary-card"><strong>${h(x.name)}</strong><p>${h(x.note)}</p><a class="text-link" href="${h(x.url)}" target="_blank" rel="noopener noreferrer">Mở nguồn chính thức ${icon('arrow')}</a></div>`).join('')}</div><div class="section-heading"><h2 class="section-title">5 tài liệu nguồn</h2></div>${Object.values(D.sources).map(x=>`<div class="panel glossary-card" style="margin-bottom:8px"><strong>${h(x.name)}</strong><p>${h(x.remark)}</p><small>${x.pages} trang · file PDF do người học cung cấp, không đăng công khai trong ứng dụng</small></div>`).join('')}</main>`;}
+function progressPage(){const mastered=Object.values(data.scores).filter(s=>s.best>=80).length;return `<main class="page">${heading('Tiến độ học tập','Báo cáo cá nhân được lưu cục bộ trong trình duyệt. Bạn có thể sao lưu và chuyển sang thiết bị khác bằng file JSON.')}<div class="panel progress-summary"><div class="progress-ring" style="--deg:${overall()*3.6}deg"><div>${overall()}%</div></div><p style="text-align:center;font-size:13px;color:var(--sub);margin:14px 0 2px">${data.completed.length} trên ${D.lessons.length} bài đã hoàn thành</p></div><div class="progress-layout"><div class="panel progress-stat"><strong>${data.opened.length}</strong><span>Bài đã mở</span></div><div class="panel progress-stat"><strong>${mastered}</strong><span>Module có quiz đạt ≥80%</span></div><div class="panel progress-stat"><strong>${data.bookmarked.length}</strong><span>Bài đã lưu</span></div></div><div class="section-heading"><h2 class="section-title">Tiến độ theo module</h2></div><div class="panel" style="padding:18px">${D.modules.map((m,i)=>`<div style="margin-bottom:${i===D.modules.length-1?'0':'17px'}"><div class="progress-label"><strong style="color:var(--ink)">${h(m.title)}</strong><span>${moduleDone(m.id)}/${countLessons(m.id)} · ${modPercent(m.id)}%</span></div>${pct(modPercent(m.id))}${data.scores[m.id]?`<small class="smallprint">Điểm kiểm tra cao nhất: ${data.scores[m.id].best}%</small>`:''}</div>`).join('')}</div><div class="section-heading"><h2 class="section-title">Các bài đã lưu</h2></div><div class="lesson-list">${data.bookmarked.map(x=>D.lessons.find(z=>z.id===x)).filter(Boolean).map(x=>lessonRow(x,moduleLessons(x.module).indexOf(x))).join('')||'<div class="empty">Chưa lưu bài nào. Trong trang bài học, chọn “Lưu bài” để xem lại tại đây.</div>'}</div><div class="section-heading"><h2 class="section-title">Dữ liệu của bạn</h2></div><div class="panel form-panel"><h3 style="margin:0 0 5px">Sao lưu và chuyển thiết bị</h3><p>Tiến độ chỉ nằm trên trình duyệt/thiết bị này; không tự đồng bộ qua điện thoại hoặc máy tính khác. Xuất JSON để lưu riêng, sau đó nhập ở thiết bị khác.</p><div class="quiz-actions"><button class="button outline" data-export>${icon('download')} Xuất tiến độ</button><button class="button outline" data-import>${icon('upload')} Nhập tiến độ</button><input id="import-file" class="sr-only" type="file" accept=".json,application/json"/></div><hr class="divider"><button class="button small ghost" data-reset>${icon('trash')} Xóa tiến độ trên thiết bị này</button></div></main>`;}
+function challengePage(){const q=D.final;let answers=runtime.checkpoint.challenge||{};const done=Object.keys(answers).length;return `<main class="page">${heading('Thử thách tòa nhà Ánh Dương','Một kịch bản tổng hợp để luyện cách ra quyết định khi chuẩn bị nhận bàn giao và bắt đầu vận hành.','CAPSTONE · TÌNH HUỐNG MÔ PHỎNG')}<div class="panel" style="padding:19px;margin:0 0 16px"><p class="eyebrow">BỐI CẢNH GIẢ ĐỊNH</p><h2 class="section-title">Một tòa nhà 18 tầng, 240 căn hộ</h2><p class="section-sub" style="margin-top:9px">Đội vận hành chuẩn bị tiếp nhận: còn thiếu hướng dẫn máy bơm, KPI vệ sinh chưa rõ và dự toán chi đang vượt thu. Bạn không cần biết mọi câu trả lời ngay, nhưng phải quyết định điều gì cần kiểm tra và chuyển tuyến.</p><div class="line-graphic"><div class="step">Tiếp nhận</div><div class="arrow">›</div><div class="step">Tổ chức</div><div class="arrow">›</div><div class="step">Kiểm soát</div></div></div><div class="section-heading"><h2 class="section-title">6 quyết định phải đưa ra</h2><span class="pill">${done}/6 đã trả lời</span></div>${q.map((a,i)=>`<div class="panel scenario-card"><span class="section-tag">QUYẾT ĐỊNH ${i+1}</span><h3>${h(a[0])}</h3><div class="choice-list">${a[1].map((x,j)=>`<button class="choice ${answers[i]===j?'selected':''} ${answers[i]!==undefined&&j===a[2]?'correct':''}" data-challengechoice="${i}:${j}" ${answers[i]!==undefined?'disabled':''}><span class="choice-dot">${String.fromCharCode(65+j)}</span>${h(x)}</button>`).join('')}</div>${answers[i]!==undefined?`<div class="feedback ${answers[i]===a[2]?'good':'bad'}"><strong>${answers[i]===a[2]?'Quyết định phù hợp':'Hãy ghi nhớ phương án tốt hơn'}</strong>${h(a[3])}</div>`:''}</div>`).join('')}${done===6?`<div class="panel quiz-result"><div class="eyebrow">HOÀN THÀNH TÌNH HUỐNG</div><div class="result-figure result-good">${Math.round(100*q.filter((a,i)=>answers[i]===a[2]).length/6)}%</div><p class="results-note">Kết quả là phần tự đánh giá một tình huống giả định, không thay thế đánh giá nghề tại hiện trường.</p><button class="button" data-startquiz="m6">Tiếp tục kiểm tra 6 câu ${icon('arrow')}</button></div>`:''}</main>`;}
+function notFound(){return `<main class="page"><div class="empty"><h3>Không tìm thấy nội dung</h3><p>Trang này có thể đã được đổi đường dẫn.</p><button class="button" data-route="home">Về trang chủ</button></div></main>`;}
+let lastRoute='';
+function render(noScroll=false){const r=route(),p=r.split('/');let inner;if(r==='home')inner=dashboard();else if(r==='path')inner=pathPage();else if(r==='practice')inner=practicePage();else if(r==='reference')inner=referencePage();else if(r==='progress')inner=progressPage();else if(r==='cards')inner=cardsPage();else if(r==='challenge')inner=challengePage();else if(p[0]==='module')inner=modulePage(p[1]);else if(p[0]==='lesson')inner=lessonPage(p[1]);else if(p[0]==='quiz')inner=quizPage(p[1]);else inner=notFound();const y=window.scrollY;$('#app').innerHTML=appShell(inner);document.title=(p[0]==='lesson'?D.lessons.find(l=>l.id===p[1])?.title+' – ':'')+'Building Operations Learning Hub';if(lastRoute!==r&&!noScroll){window.scrollTo({top:0,behavior:'instant'});}else if(noScroll){requestAnimationFrame(()=>window.scrollTo({top:y,behavior:'instant'}));}lastRoute=r;}
+function addSelected(list,index,multi){if(multi)return list.includes(index)?list.filter(i=>i!==index):[...list,index];return[index]}
+function markLesson(id){if(!data.completed.includes(id)){data.completed.push(id);save();}showToast('Bài học đã được ghi nhận hoàn thành.');render(true);}
+document.addEventListener('click',e=>{const target=e.target.closest('[data-anchor],[data-route],[data-bookmark],[data-checkchoice],[data-checksubmit],[data-checkretry],[data-marklesson],[data-startquiz],[data-quizchoice],[data-quizsubmit],[data-quiznext],[data-practicetab],[data-scenariochoice],[data-scenariosubmit],[data-flip],[data-known],[data-challengechoice],[data-export],[data-import],[data-reset]');if(!target)return;e.preventDefault();const a=target.dataset;
+if(a.anchor){document.getElementById(a.anchor)?.scrollIntoView({behavior:'smooth',block:'start'});return;}
+if(a.route){navigate(a.route);return;}
+if(a.bookmark){data.bookmarked=data.bookmarked.includes(a.bookmark)?data.bookmarked.filter(x=>x!==a.bookmark):[...data.bookmarked,a.bookmark];save();render(true);showToast(data.bookmarked.includes(a.bookmark)?'Đã lưu bài học.':'Đã bỏ lưu bài học.');return;}
+if(a.checkchoice){const raw=a.checkchoice;const i=+raw.split(':').pop(),lid=raw.slice(0,raw.lastIndexOf(':'));const l=D.lessons.find(x=>x.id===lid),q=D.questions[l?.module]?.find(q=>q.lesson===lid);if(!q||runtime.checkpointChecked[lid])return;runtime.checkpoint[lid]=addSelected(runtime.checkpoint[lid]||[],i,isMulti(q));render(true);return;}
+if(a.checksubmit){const lid=a.checksubmit,l=D.lessons.find(x=>x.id===lid),q=D.questions[l.module]?.find(q=>q.lesson===lid);const choice=runtime.checkpoint[lid]||[];if(!choice.length)return;const good=correct(q,choice);runtime.checkpointChecked[lid]={good};if(good&&!data.completed.includes(lid)){data.completed.push(lid);save();}render(true);if(good)showToast('Đúng rồi — bạn đã hoàn thành bài học!');return;}
+if(a.checkretry){delete runtime.checkpointChecked[a.checkretry];runtime.checkpoint[a.checkretry]=[];render(true);return;}
+if(a.marklesson){markLesson(a.marklesson);return;}
+if(a.startquiz){quizStart(a.startquiz);return;}
+if(a.quizchoice){const bits=a.quizchoice.split(':'),mid=bits[0],idx=+bits[1],opt=+bits[2],s=runtime.quiz[mid],qs=mid==='m6'?D.final.map((v,i)=>({answer:v[2]})):D.questions[mid];if(!s||s.verified[idx])return;const q=qs[idx];s.answers[idx]=addSelected(s.answers[idx]||[],opt,Array.isArray(q.answer));render(true);return;}
+if(a.quizsubmit){const mid=a.quizsubmit,s=runtime.quiz[mid],qs=mid==='m6'?D.final.map(v=>({answer:v[2]})):D.questions[mid],q=qs[s.index],ans=s.answers[s.index]||[];if(!ans.length)return;s.verified[s.index]={good:correct(q,ans)};render(true);return;}
+if(a.quiznext){const mid=a.quiznext,s=runtime.quiz[mid],len=mid==='m6'?D.final.length:D.questions[mid].length;if(s.index<len-1){s.index++;render(true);window.scrollTo({top:0,behavior:'instant'});}else{const correctN=Object.values(s.verified).filter(x=>x.good).length;const score=Math.round(correctN/len*100);s.result=score;const old=data.scores[mid];data.scores[mid]={last:score,best:Math.max(old?.best||0,score),attempts:(old?.attempts||0)+1};save();render();window.scrollTo({top:0,behavior:'instant'});}return;}
+if(a.practicetab){runtime.practiceTab=a.practicetab;render(true);return;}
+if(a.scenariochoice){const bits=a.scenariochoice.split(':'),key=bits[0]+':'+bits[1],op=+bits[2];if(data.scenarioDone[key])return;runtime.checkpoint['sc:'+key]=[op];render(true);return;}
+if(a.scenariosubmit){const key=a.scenariosubmit,bits=key.split(':'),sc=D.scenarios[bits[0]]?.[+bits[1]],ans=(runtime.checkpoint['sc:'+key]||[])[0];if(!sc||ans===undefined)return;if(ans!==sc.answer){showToast('Chưa đúng. Hãy xem lại tình huống và chọn lại.');runtime.checkpoint['sc:'+key]=[];render(true);return;}data.scenarioDone[key]=true;save();render(true);showToast('Đã giải đúng tình huống!');return;}
+if(a.flip!==undefined){const idx=+a.flip;runtime.flashFlip[idx]=!runtime.flashFlip[idx];render(true);return;}
+if(a.known!==undefined){const idx=+a.known;data.flashKnown=data.flashKnown.includes(idx)?data.flashKnown.filter(x=>x!==idx):[...data.flashKnown,idx];save();render(true);return;}
+if(a.challengechoice){const [i,j]=a.challengechoice.split(':').map(Number);runtime.checkpoint.challenge=runtime.checkpoint.challenge||{};if(runtime.checkpoint.challenge[i]!==undefined)return;runtime.checkpoint.challenge[i]=j;if(Object.keys(runtime.checkpoint.challenge).length===6){const good=D.final.filter((q,index)=>q[2]===runtime.checkpoint.challenge[index]).length;showToast(`Đã trả lời ${good}/6 quyết định phù hợp.`);}render(true);return;}
+if(a.export!==undefined){const payload=JSON.stringify({...data,exportedAt:new Date().toISOString(),course:'building-operations-learning-hub'},null,2);const blob=new Blob([payload],{type:'application/json'});const url=URL.createObjectURL(blob),anc=document.createElement('a');anc.href=url;anc.download='building-operations-progress.json';document.body.appendChild(anc);anc.click();anc.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);showToast('Đã xuất file sao lưu tiến độ.');return;}
+if(a.import!==undefined){$('#import-file')?.click();return;}
+if(a.reset!==undefined){if(!confirm('Xóa toàn bộ tiến độ tự học trên thiết bị này? Hành động không thể hoàn tác nếu chưa sao lưu.'))return;data=defaultStore();save();runtime.quiz={};runtime.checkpoint={};runtime.checkpointChecked={};render(true);showToast('Đã xóa tiến độ trên thiết bị.');return;}
+});
+document.addEventListener('input',e=>{if(e.target?.id==='reference-search'){runtime.search=e.target.value;const target=$('#search-results');if(target)target.innerHTML=referenceResults();}});
+document.addEventListener('change',async e=>{if(e.target?.id!=='import-file')return;const file=e.target.files?.[0];if(!file)return;try{const payload=JSON.parse(await file.text());if(payload?.version!==1||!Array.isArray(payload.completed)||!Array.isArray(payload.opened)||!Array.isArray(payload.bookmarked)||typeof payload.scores!=='object')throw Error('Invalid');const lessonIds=new Set(D.lessons.map(x=>x.id));const clean={...defaultStore(),...payload};clean.opened=unique(payload.opened.filter(x=>lessonIds.has(x)));clean.completed=unique(payload.completed.filter(x=>lessonIds.has(x)));clean.bookmarked=unique(payload.bookmarked.filter(x=>lessonIds.has(x)));clean.flashKnown=(payload.flashKnown||[]).filter(x=>Number.isInteger(x)&&x>=0&&x<D.glossary.length);clean.lastLesson=lessonIds.has(payload.lastLesson)?payload.lastLesson:null;delete clean.exportedAt;delete clean.course;data=clean;save();render(true);showToast('Đã nhập tiến độ học tập.');}catch(err){showToast('File không đúng định dạng sao lưu của ứng dụng.');}finally{e.target.value='';}});
+window.addEventListener('hashchange',()=>render());
+if(!location.hash)location.hash='#/home';render();
+})();
+
+</script></body></html>
