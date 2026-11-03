@@ -1,27 +1,47 @@
-# Quản lý vận hành nhà chung cư — Bản tự học tối giản
+# Tự học quản lý vận hành nhà chung cư — Mobile Reading Hub (V3)
 
-Website tự học với thiết kế **mobile-first, đọc liên tục, ít thao tác**. Mục tiêu là hiểu nội dung từ tổng quan đến chi tiết.
+Trang web: https://lachimo-2000.github.io/quan-ly-van-hanh-chung-cu/
 
-## Website
+## Mục đích
 
-https://lachimo-2000.github.io/quan-ly-van-hanh-chung-cu/
+Bản học tập ưu tiên **đọc - hiểu - tra cứu từ tổng quan đến chi tiết**, thay vì kiểm tra liên tục. Được thiết kế cho điện thoại và người học mới.
 
-## Cách học
+- **5 chủ đề**, 38 mục đọc cốt lõi được diễn giải, **25 cụm kiến thức đọc sâu**.
+- Sơ đồ quy trình, so sánh, vai trò và các thẻ trực quan theo từng chủ đề.
+- Nguồn PDF và **số trang cụ thể cạnh mỗi mục**.
+- Thư viện 5 PDF gốc, hỗ trợ mở theo số trang khi người học đã chọn file trên thiết bị.
+- Lộ trình cuộn liên tục và mục lục nhảy nhanh tùy chọn; không phải mở nhiều lớp bài học.
+- Không có hệ thống quiz/test bắt buộc.
 
-1. **Tổng quan:** xem lộ trình 5 chủ đề và bức tranh ngành.
-2. **Đọc nội dung:** chạm vào một chủ đề và cuộn qua toàn bộ các mục; dùng mục lục để nhảy đến phần muốn đọc.
-3. **Ví dụ:** mỗi mục có diễn giải, ví dụ công việc và chỉ dẫn trang PDF tương ứng.
-4. **Tự ôn (không bắt buộc):** mỗi chủ đề có 2 câu gợi nhớ; tổng cộng **10 câu**, không chấm điểm, không có thi riêng hay gamification.
-5. **Thuật ngữ:** trang tra cứu các khái niệm phổ biến, có tìm kiếm tiếng Việt.
+## Sử dụng trên điện thoại
 
-Giao diện ưu tiên màn hình **320–430px**, chữ đọc thoải mái, không cần mở từng bài học thành các trang con. Trình duyệt lưu chủ đề và vị trí đọc gần nhất trên cùng thiết bị.
+1. Mở website, chọn chủ đề.
+2. Cuộn từ tổng quan đến chi tiết. Có thể mở *Mục lục* để nhảy tới mục muốn xem.
+3. Khi muốn xem slide gốc, nhấn nút **Mở PDF trang ...**; lần đầu website chuyển tới Thư viện để bạn chọn đúng PDF.
+4. Tại Thư viện, chọn file PDF từ thiết bị. Website thử lưu file trong **IndexedDB** của trình duyệt để mở lại ở những lần sau, nhưng việc lưu có thể thất bại nếu thiết bị thiếu dung lượng hoặc giới hạn bộ nhớ.
+5. Sau đó quay lại chủ đề và nhấn mở trang tương ứng. Một số ứng dụng xem PDF trên điện thoại có thể bỏ qua tham số trang, khi đó dùng số trang hiển thị để đi tới trang thủ công.
 
-## Cấu trúc kỹ thuật
+**Quan trọng:** PDF tải vào Thư viện được lưu **riêng trên thiết bị của người học**, không gửi lên GitHub hay máy chủ. PDF gốc **chưa được xuất bản công khai** do chưa xác nhận quyền phân phối nội dung từ tác giả/cơ sở đào tạo. Vì vậy người mới truy cập cần có sẵn 5 file PDF để liên kết hoạt động.
 
-Website chính nằm trong `index.html` và chạy độc lập. Để triển khai, vào **Settings → Pages → Source: GitHub Actions**. Workflow `.github/workflows/deploy.yml` chạy khi cập nhật nhánh `main`.
+## Nội dung gốc và giới hạn
 
-Không cần Node, backend, API key hoặc cơ sở dữ liệu.
+Bộ tài liệu gồm:
+1. Pháp luật (60 trang)
+2. Tiếp nhận hồ sơ chung cư (47 trang, chọn bản có tên `(1)`)
+3. Quản lý dự án (33 trang)
+4. Hợp đồng QLVH (54 trang)
+5. Quản lý tài chính (30 trang)
 
-## Giới hạn và quyền nội dung
+Tổng cộng **224 trang**. Phần học trên website là bản tóm lược và diễn giải; các mục đọc sâu tăng độ phủ nhưng vẫn **không đồng nghĩa đã chuyển thể từng chi tiết của 224 trang**. Muốn tìm đầy đủ quy định, biểu mẫu và hình ảnh slide, sử dụng nút mở PDF gốc. Cần kiểm tra hiệu lực pháp luật trước khi áp dụng vào công việc thực tế.
 
-Nội dung là bản diễn giải tự học từ 5 PDF về pháp luật, bàn giao, vận hành, hợp đồng và tài chính; không phải chứng nhận nghiệp vụ. Các tình huống tổng hợp chỉ để minh họa. Kiểm tra hiệu lực văn bản pháp luật trước khi dùng trong công việc. Việc công khai học liệu chuyển thể cần có quyền sử dụng phù hợp; repository không chứa các PDF nguyên bản.
+## Kỹ thuật / triển khai GitHub Pages
+
+- `index.html`: điểm vào, dữ liệu bài học.
+- `assets/v3.css`: giao diện mobile-first.
+- `assets/atlas.js`: 25 cụm đọc sâu có sơ đồ và tham chiếu trang.
+- `assets/v3.js`: nội dung trang, điều hướng, thư viện PDF cá nhân dùng IndexedDB.
+- `.github/workflows/deploy.yml`: deploy tất cả file cần thiết khi push lên `main`.
+
+Tại GitHub **Settings → Pages**, chọn **GitHub Actions**. Không cần backend, tài khoản học viên, API key hoặc Node.js để vận hành.
+
+Source ZIP cập nhật từ repository: https://github.com/lachimo-2000/quan-ly-van-hanh-chung-cu/archive/refs/heads/main.zip
